@@ -52,3 +52,11 @@ api/search.json    将来RAG用の統合インデックス
 - GitHub Actionsによるデータ更新
 - Embedding生成
 - RAG API連携
+
+
+## Current UI
+
+- Bloomberg Terminal風トップページ
+- Knowledge Graph型JSONモデル
+- 横断検索プレビュー
+- GitHub Pages対応

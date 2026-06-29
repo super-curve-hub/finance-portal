@@ -1,1 +1,225 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SUPER CURVE TERMINAL</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="assets/css/style.css"></head><body><main class="shell"><section class="hero"><p class="eyebrow">Institutional Market Intelligence</p><h1>SUPER CURVE<br>TERMINAL</h1><p class="lead">知識・市場データ・リサーチを同じJSONモデルで統合する金融リサーチポータル。Option Handbook、GEX、Oil、USDJPY、Rates、Shipping、Gold/Silver、Macro Library、AI Searchを一つの構造で管理します。</p><p><a class="btn primary" href="search/">AI Searchを開く</a> <a class="btn" href="glossary/">Option Handbook</a></p></section><section class="section"><h2>Modules</h2><div id="modules" class="grid"></div></section><section class="section two"><div class="card"><h2>Knowledge Graph</h2><p>すべての用語、指標、チャート、記事をオブジェクトとして管理。ページは表示方法であり、データはJSONが中心です。</p><div class="chart">Concept → Dashboard → Research → Chart → AI Search</div></div><div class="card"><h2>Current Build</h2><div class="tags"><span class="tag">GitHub Pages</span><span class="tag">JSON DB</span><span class="tag">PWA</span><span class="tag">Dark Mode</span><span class="tag">RAG Ready</span></div></div></section></main><script src="assets/js/app.js"></script><script>fetchJson('data/modules.json').then(d=>{modules.innerHTML=d.modules.map(m=>`<article class="card"><h3>${m.icon} ${m.title}</h3><p>${m.summary}</p><div class="tags">${m.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div><p><a class="btn" href="${m.url}">Open</a></p></article>`).join('')})</script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050b14">
+  <title>SUPER CURVE TERMINAL | Finance Portal</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="terminal-bg"></div>
+
+  <header class="terminal-topbar">
+    <div class="shell terminal-nav">
+      <a class="terminal-brand" href="./" aria-label="SUPER CURVE TERMINAL home">
+        <span class="brand-mark">SC</span>
+        <span>
+          <strong>SUPER CURVE TERMINAL</strong>
+          <small>Institutional Market Intelligence</small>
+        </span>
+      </a>
+      <nav class="terminal-links" aria-label="Primary">
+        <a href="glossary/">Handbook</a>
+        <a href="dashboard/gex.html">GEX</a>
+        <a href="dashboard/oil.html">Oil</a>
+        <a href="dashboard/usdjpy.html">FX</a>
+        <a href="search/">Search</a>
+      </nav>
+      <button class="terminal-toggle" id="themeToggle" type="button">Dark</button>
+    </div>
+  </header>
+
+  <main class="shell terminal-main">
+    <section class="terminal-hero">
+      <div class="hero-copy">
+        <p class="terminal-kicker">KNOWLEDGE GRAPH / MARKET DATA / RESEARCH</p>
+        <h1>個人版 Bloomberg Terminal を<br>GitHub Pages で運用する。</h1>
+        <p class="hero-lead">
+          Option Handbook、GEX、Oil、USDJPY、Rates、Shipping、Gold/Silver、Macro Library、AI Searchを、
+          静的HTMLの集合ではなく、共通JSONスキーマで管理する金融リサーチポータル。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="search/">横断検索を開く</a>
+          <a class="btn" href="glossary/">Option Handbook</a>
+          <a class="btn" href="dashboard/gex.html">GEX Dashboard</a>
+        </div>
+      </div>
+
+      <aside class="terminal-panel hero-panel" aria-label="Market overview">
+        <div class="panel-head">
+          <span>MARKET REGIME</span>
+          <strong id="terminalClock">--:-- JST</strong>
+        </div>
+        <div class="regime-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Positive Gamma / Event Pass</strong>
+            <p>市場データ接続前の初期テンプレート。各数値はJSON差し替えで更新可能。</p>
+          </div>
+        </div>
+        <div class="ticker-grid">
+          <div><small>SPX GEX</small><b class="up">+2.8bn</b></div>
+          <div><small>Gamma Flip</small><b>6,420</b></div>
+          <div><small>VIX Term</small><b class="up">Contango</b></div>
+          <div><small>USDJPY</small><b>Watch</b></div>
+          <div><small>Oil</small><b class="warn">Neutral</b></div>
+          <div><small>Gold/Silver</small><b class="down">Stress</b></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="ticker-strip" aria-label="Terminal ticker">
+      <div class="ticker-track">
+        <span>GEX: Dealer positioning</span>
+        <span>Vanna: IV-driven delta hedge</span>
+        <span>Charm: time-decay hedge flow</span>
+        <span>Oil: Saudi / OSP / Crack / Tanker</span>
+        <span>USDJPY: speed × level × politics</span>
+        <span>Rates: level / slope / curvature</span>
+        <span>Shipping: BDI / fleet / orderbook</span>
+        <span>AI Search: RAG ready</span>
+      </div>
+    </section>
+
+    <section class="terminal-section command-section">
+      <div class="section-head">
+        <div>
+          <p class="terminal-kicker">COMMAND LINE</p>
+          <h2>検索から全オブジェクトへ</h2>
+        </div>
+        <a class="inline-link" href="api/search.json">api/search.json</a>
+      </div>
+      <div class="command-box">
+        <span class="prompt">SC &gt;</span>
+        <input id="quickSearch" type="search" placeholder="Gamma Flip / GEX / Oil / USDJPY / Rates を検索" autocomplete="off">
+      </div>
+      <div id="quickResults" class="quick-results"></div>
+    </section>
+
+    <section class="terminal-section">
+      <div class="section-head">
+        <div>
+          <p class="terminal-kicker">MODULES</p>
+          <h2>金融ポータル</h2>
+        </div>
+        <span class="terminal-note">JSON: data/modules.json</span>
+      </div>
+      <div id="modules" class="terminal-grid modules-grid"></div>
+    </section>
+
+    <section class="terminal-section terminal-layout">
+      <article class="terminal-panel">
+        <div class="panel-head"><span>BUILD ROADMAP</span><strong>v1 → RAG</strong></div>
+        <ol class="roadmap-list">
+          <li><b>Top Page</b><span>Bloomberg Terminal風ホーム</span></li>
+          <li><b>Option Handbook</b><span>100語辞典をJSON化</span></li>
+          <li><b>Dashboards</b><span>GEX / Oil / FX / Rates / Shipping / Metals</span></li>
+          <li><b>Macro Library</b><span>note・Markdown・リサーチ連携</span></li>
+          <li><b>AI Search</b><span>RAG・ベクトル検索へ拡張</span></li>
+        </ol>
+      </article>
+
+      <article class="terminal-panel">
+        <div class="panel-head"><span>KNOWLEDGE GRAPH</span><strong>Object Model</strong></div>
+        <pre class="terminal-code"><code>{
+  "id": "gamma-flip",
+  "type": "concept",
+  "dashboards": ["gex-dashboard"],
+  "research": ["dealer-flow"],
+  "charts": ["gamma-flip-chart"],
+  "related": ["gex", "vanna", "charm"]
+}</code></pre>
+      </article>
+    </section>
+
+    <section class="terminal-section terminal-layout wide-left">
+      <article class="terminal-panel">
+        <div class="panel-head"><span>ANALYTICS STACK</span><strong>共通データモデル</strong></div>
+        <div class="stack-map">
+          <div>Knowledge<br><small>Option Handbook</small></div>
+          <div>Market Data<br><small>Dashboards</small></div>
+          <div>Research<br><small>Macro Library</small></div>
+          <div>Search<br><small>AI / RAG</small></div>
+        </div>
+      </article>
+      <article class="terminal-panel latest-panel">
+        <div class="panel-head"><span>LATEST OBJECTS</span><strong>Search Index</strong></div>
+        <div id="latestObjects" class="latest-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="terminal-footer">
+    <div class="shell">
+      <strong>SUPER CURVE TERMINAL</strong>
+      <span>GitHub Pages / JSON Database / PWA / RAG Ready</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    const $ = (s) => document.querySelector(s);
+    const clock = $('#terminalClock');
+    const updateClock = () => {
+      const now = new Date();
+      clock.textContent = new Intl.DateTimeFormat('ja-JP', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo' }).format(now) + ' JST';
+    };
+    updateClock();
+    setInterval(updateClock, 30000);
+
+    const themeToggle = $('#themeToggle');
+    const savedTheme = localStorage.getItem('sc-theme');
+    if (savedTheme === 'light') document.documentElement.classList.add('light');
+    themeToggle.textContent = document.documentElement.classList.contains('light') ? 'Light' : 'Dark';
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('light');
+      const mode = document.documentElement.classList.contains('light') ? 'light' : 'dark';
+      localStorage.setItem('sc-theme', mode);
+      themeToggle.textContent = mode === 'light' ? 'Light' : 'Dark';
+    });
+
+    Promise.all([fetchJson('data/modules.json'), fetchJson('api/search.json')]).then(([moduleData, searchData]) => {
+      const modules = moduleData.modules || [];
+      const objects = searchData.objects || [];
+
+      $('#modules').innerHTML = modules.map((m, i) => `
+        <a class="terminal-module card-${i + 1}" href="${m.url}">
+          <span class="module-icon">${m.icon}</span>
+          <span class="module-meta">
+            <strong>${m.title}</strong>
+            <small>${m.summary}</small>
+            <em>${(m.tags || []).join(' / ')}</em>
+          </span>
+        </a>
+      `).join('');
+
+      $('#latestObjects').innerHTML = objects.slice(0, 7).map(o => `
+        <a class="latest-item" href="${o.url}">
+          <span>${o.type}</span>
+          <strong>${o.title}</strong>
+        </a>
+      `).join('');
+
+      const input = $('#quickSearch');
+      const results = $('#quickResults');
+      const render = (q) => {
+        const query = q.trim().toLowerCase();
+        if (!query) {
+          results.innerHTML = objects.slice(0, 4).map(o => `
+            <a class="quick-card" href="${o.url}"><b>${o.title}</b><small>${o.summary}</small></a>
+          `).join('');
+          return;
+        }
+        const hit = objects.filter(o => [o.title, o.summary, ...(o.tags || [])].join(' ').toLowerCase().includes(query)).slice(0, 6);
+        results.innerHTML = hit.length ? hit.map(o => `
+          <a class="quick-card" href="${o.url}"><b>${o.title}</b><small>${o.summary}</small></a>
+        `).join('') : '<div class="quick-empty">該当なし。api/search.jsonへオブジェクトを追加してください。</div>';
+      };
+      input.addEventListener('input', e => render(e.target.value));
+      render('');
+    });
+  </script>
+</body>
+</html>
