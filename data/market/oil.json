@@ -1,0 +1,11 @@
+{
+  "asOf": "2026-06-29T06:00:00Z",
+  "regime": "Neutral / Event Risk",
+  "brent": 86.2,
+  "wti": 82.9,
+  "dubai": 84.1,
+  "crack_spread": 18.5,
+  "osp": "firm",
+  "tanker_rate": "elevated",
+  "inventory": "draw"
+}

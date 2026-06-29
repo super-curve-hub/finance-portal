@@ -1,0 +1,13 @@
+{
+  "asOf": "2026-06-29T06:00:00Z",
+  "spot": 44500,
+  "regime": "Positive Gamma",
+  "net_gex": 12.4,
+  "gamma_flip": 43800,
+  "call_wall": 45000,
+  "put_wall": 43000,
+  "vanna": "supportive",
+  "charm": "supportive",
+  "zero_dte_share": 42,
+  "note": "サンプル値。実運用では外部データからdata/market/gex.jsonを更新。"
+}

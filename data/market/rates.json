@@ -1,0 +1,10 @@
+{
+  "asOf": "2026-06-29T06:00:00Z",
+  "ust2y": 4.55,
+  "ust10y": 4.35,
+  "jgb10y": 1.35,
+  "move": 112,
+  "curve_slope": -20,
+  "curve_butterfly": 18,
+  "regime": "Bear flattening watch"
+}
