@@ -1,0 +1,1 @@
+{"id":"charm","type":"concept","title":"Charm","category":"Greeks","summary":"時間経過によるDelta変化を表す感応度。","plain_jp":"時間が経つだけでディーラーがヘッジを調整する力。","description":"CharmはDeltaの時間感応度です。満期接近やイベント通過後に、時間経過だけでデルタヘッジの再調整が必要になります。","related":["vanna","gamma-flip","zero-dte"],"dashboards":["gex-dashboard"],"tags":["options","greeks","charm"],"page":"charm.html"}

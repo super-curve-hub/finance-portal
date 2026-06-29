@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://super-curve-hub.github.io/super-curve-finance-portal/sitemap.xml
+Sitemap: https://super-curve-hub.github.io/finance-portal/sitemap.xml

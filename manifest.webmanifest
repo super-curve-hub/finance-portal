@@ -1,12 +1,10 @@
 {
-  "name": "Super Curve Finance Portal",
-  "short_name": "SC Portal",
-  "start_url": "./index.html",
+  "name": "SUPER CURVE FINANCE PORTAL",
+  "short_name": "SC Terminal",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#0f172a",
+  "background_color": "#07111f",
   "theme_color": "#0f172a",
-  "icons": [
-    {"src":"assets/icons/icon-192.svg","sizes":"192x192","type":"image/svg+xml"},
-    {"src":"assets/icons/icon-512.svg","sizes":"512x512","type":"image/svg+xml"}
-  ]
+  "description": "知識と市場データを統合する金融リサーチポータル",
+  "icons": []
 }

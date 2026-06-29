@@ -1,0 +1,1 @@
+{"id":"gamma-flip-map","type":"chart","title":"Gamma Flip Strike Map","summary":"ストライク別GEXとGamma Flipを示す概念チャート。","source":"data/dashboards/gex.json","page":"dashboard/gex.html","tags":["chart","gex","gamma-flip"],"related":["gamma-flip","gex"]}

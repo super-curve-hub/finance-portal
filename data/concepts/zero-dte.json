@@ -1,0 +1,1 @@
+{"id":"zero-dte","type":"concept","title":"0DTE","category":"Options Flow","summary":"当日満期オプション。","plain_jp":"その日に満期を迎えるオプションで、短時間のヘッジフローが相場を動かしやすい。","description":"0DTEは満期までの時間が極端に短いため、Gammaが大きくなりやすく、短期のディーラーヘッジや投機フローが指数の値動きを増幅する場合があります。","related":["gamma-flip","gex","charm"],"dashboards":["gex-dashboard"],"tags":["options","0dte","intraday"],"page":"zero-dte.html"}

@@ -1,505 +1,267 @@
 {
-  "version": "1.0",
-  "items": [
+  "objects": [
     {
-      "id": "iv",
-      "term": "Implied Volatility",
-      "category": "Volatility"
-    },
-    {
-      "id": "rv",
-      "term": "Realized Volatility",
-      "category": "Volatility"
-    },
-    {
-      "id": "hv",
-      "term": "Historical Volatility",
-      "category": "Volatility"
-    },
-    {
-      "id": "vrp",
-      "term": "Vol Risk Premium",
-      "category": "Volatility"
-    },
-    {
-      "id": "vol-crush",
-      "term": "Vol Crush",
-      "category": "Volatility"
-    },
-    {
-      "id": "normalization",
-      "term": "Normalization",
-      "category": "Volatility"
-    },
-    {
-      "id": "vol-surface",
-      "term": "Vol Surface",
-      "category": "Volatility"
-    },
-    {
-      "id": "vol-skew",
-      "term": "Vol Skew",
-      "category": "Volatility"
-    },
-    {
-      "id": "term-structure",
-      "term": "Term Structure",
-      "category": "Volatility"
-    },
-    {
-      "id": "forward-vol",
-      "term": "Forward Volatility",
-      "category": "Volatility"
-    },
-    {
-      "id": "delta",
-      "term": "Delta",
-      "category": "Greeks"
-    },
-    {
-      "id": "gamma",
-      "term": "Gamma",
-      "category": "Greeks"
-    },
-    {
-      "id": "vega",
-      "term": "Vega",
-      "category": "Greeks"
-    },
-    {
-      "id": "theta",
-      "term": "Theta",
-      "category": "Greeks"
-    },
-    {
-      "id": "rho",
-      "term": "Rho",
-      "category": "Greeks"
-    },
-    {
-      "id": "vanna",
-      "term": "Vanna",
-      "category": "Greeks"
-    },
-    {
-      "id": "charm",
-      "term": "Charm",
-      "category": "Greeks"
-    },
-    {
-      "id": "vomma",
-      "term": "Vomma",
-      "category": "Greeks"
-    },
-    {
-      "id": "color",
-      "term": "Color",
-      "category": "Greeks"
-    },
-    {
-      "id": "speed",
-      "term": "Speed",
-      "category": "Greeks"
-    },
-    {
-      "id": "ultima",
-      "term": "Ultima",
-      "category": "Greeks"
-    },
-    {
-      "id": "zomma",
-      "term": "Zomma",
-      "category": "Greeks"
-    },
-    {
-      "id": "dual-delta",
-      "term": "Dual Delta",
-      "category": "Greeks"
-    },
-    {
-      "id": "dual-gamma",
-      "term": "Dual Gamma",
-      "category": "Greeks"
-    },
-    {
-      "id": "elasticity",
-      "term": "Elasticity",
-      "category": "Greeks"
+      "id": "gamma-flip",
+      "type": "concept",
+      "title": "Gamma Flip",
+      "summary": "市場全体のGEXがプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯。",
+      "tags": [
+        "options",
+        "gex",
+        "dealer-flow",
+        "gamma"
+      ],
+      "related": [
+        "gex",
+        "dealer-long-gamma",
+        "dealer-short-gamma",
+        "vanna",
+        "charm",
+        "zero-dte"
+      ],
+      "url": "glossary/gamma-flip.html"
     },
     {
       "id": "gex",
-      "term": "Gamma Exposure",
-      "category": "Dealer Flow"
+      "type": "concept",
+      "title": "Gamma Exposure (GEX)",
+      "summary": "オプション市場全体のGamma量を推定する指標。",
+      "tags": [
+        "options",
+        "gamma",
+        "gex"
+      ],
+      "related": [
+        "gamma-flip",
+        "dealer-long-gamma",
+        "dealer-short-gamma"
+      ],
+      "url": "glossary/gex.html"
     },
     {
-      "id": "net-gex",
-      "term": "Net GEX",
-      "category": "Dealer Flow"
+      "id": "vanna",
+      "type": "concept",
+      "title": "Vanna",
+      "summary": "IV変化によるDelta変化を表す感応度。",
+      "tags": [
+        "options",
+        "greeks",
+        "vanna"
+      ],
+      "related": [
+        "gamma-flip",
+        "charm",
+        "gex"
+      ],
+      "url": "glossary/vanna.html"
     },
     {
-      "id": "gamma-flip",
-      "term": "Gamma Flip",
-      "category": "Dealer Flow"
+      "id": "charm",
+      "type": "concept",
+      "title": "Charm",
+      "summary": "時間経過によるDelta変化を表す感応度。",
+      "tags": [
+        "options",
+        "greeks",
+        "charm"
+      ],
+      "related": [
+        "vanna",
+        "gamma-flip",
+        "zero-dte"
+      ],
+      "url": "glossary/charm.html"
     },
     {
       "id": "dealer-long-gamma",
-      "term": "Dealer Long Gamma",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "dealer-short-gamma",
-      "term": "Dealer Short Gamma",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "call-wall",
-      "term": "Call Wall",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "put-wall",
-      "term": "Put Wall",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "gamma-wall",
-      "term": "Gamma Wall",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "vanna-flow",
-      "term": "Vanna Flow",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "charm-flow",
-      "term": "Charm Flow",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "dealer-hedging",
-      "term": "Dealer Hedging",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "dealer-rebalancing",
-      "term": "Dealer Rebalancing",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "dealer-unwind",
-      "term": "Dealer Unwind",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "zero-dte-flow",
-      "term": "0DTE Flow",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "opex-flow",
-      "term": "OPEX Flow",
-      "category": "Dealer Flow"
-    },
-    {
-      "id": "pinning",
-      "term": "Pinning",
-      "category": "Market Structure"
-    },
-    {
-      "id": "pin-risk",
-      "term": "Pin Risk",
-      "category": "Market Structure"
-    },
-    {
-      "id": "sticky-strike",
-      "term": "Sticky Strike",
-      "category": "Market Structure"
-    },
-    {
-      "id": "sticky-delta",
-      "term": "Sticky Delta",
-      "category": "Market Structure"
-    },
-    {
-      "id": "liquidity-vacuum",
-      "term": "Liquidity Vacuum",
-      "category": "Market Structure"
-    },
-    {
-      "id": "air-pocket",
-      "term": "Air Pocket",
-      "category": "Market Structure"
-    },
-    {
-      "id": "order-imbalance",
-      "term": "Order Imbalance",
-      "category": "Market Structure"
-    },
-    {
-      "id": "dealer-inventory",
-      "term": "Dealer Inventory",
-      "category": "Market Structure"
-    },
-    {
-      "id": "convexity",
-      "term": "Convexity",
-      "category": "Market Structure"
-    },
-    {
-      "id": "convexity-flow",
-      "term": "Convexity Flow",
-      "category": "Market Structure"
-    },
-    {
-      "id": "max-pain",
-      "term": "Max Pain",
-      "category": "Market Structure"
-    },
-    {
-      "id": "strike-gravity",
-      "term": "Strike Gravity",
-      "category": "Market Structure"
-    },
-    {
-      "id": "moneyness",
-      "term": "Moneyness",
-      "category": "Market Structure"
-    },
-    {
-      "id": "atm",
-      "term": "At The Money",
-      "category": "Market Structure"
-    },
-    {
-      "id": "otm",
-      "term": "Out Of The Money",
-      "category": "Market Structure"
-    },
-    {
-      "id": "covered-call",
-      "term": "Covered Call",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "protective-put",
-      "term": "Protective Put",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "collar",
-      "term": "Collar",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "straddle",
-      "term": "Straddle",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "strangle",
-      "term": "Strangle",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "butterfly",
-      "term": "Butterfly",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "iron-condor",
-      "term": "Iron Condor",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "calendar-spread",
-      "term": "Calendar Spread",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "diagonal-spread",
-      "term": "Diagonal Spread",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "ratio-spread",
-      "term": "Ratio Spread",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "risk-reversal",
-      "term": "Risk Reversal",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "put-spread",
-      "term": "Put Spread",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "call-spread",
-      "term": "Call Spread",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "dispersion",
-      "term": "Dispersion",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "variance-swap",
-      "term": "Variance Swap",
-      "category": "Options Strategy"
-    },
-    {
-      "id": "short-covering",
-      "term": "Short Covering",
-      "category": "Flow"
-    },
-    {
-      "id": "long-liquidation",
-      "term": "Long Liquidation",
-      "category": "Flow"
-    },
-    {
-      "id": "momentum-ignition",
-      "term": "Momentum Ignition",
-      "category": "Flow"
-    },
-    {
-      "id": "tail-chase",
-      "term": "Tail Chase",
-      "category": "Flow"
-    },
-    {
-      "id": "squeeze-fear",
-      "term": "Squeeze Fear",
-      "category": "Flow"
-    },
-    {
-      "id": "gamma-squeeze",
-      "term": "Gamma Squeeze",
-      "category": "Flow"
-    },
-    {
-      "id": "short-squeeze",
-      "term": "Short Squeeze",
-      "category": "Flow"
-    },
-    {
-      "id": "position-unwind",
-      "term": "Position Unwind",
-      "category": "Flow"
-    },
-    {
-      "id": "flow-driven-market",
-      "term": "Flow Driven Market",
-      "category": "Flow"
-    },
-    {
-      "id": "cta-buying",
-      "term": "CTA Buying",
-      "category": "Flow"
-    },
-    {
-      "id": "vix",
-      "term": "VIX",
-      "category": "Indices"
-    },
-    {
-      "id": "vvix",
-      "term": "VVIX",
-      "category": "Indices"
-    },
-    {
-      "id": "move",
-      "term": "MOVE Index",
-      "category": "Indices"
-    },
-    {
-      "id": "skew-index",
-      "term": "Skew Index",
-      "category": "Indices"
-    },
-    {
-      "id": "put-call-ratio",
-      "term": "Put/Call Ratio",
-      "category": "Indices"
-    },
-    {
-      "id": "open-interest",
-      "term": "Open Interest",
-      "category": "Indices"
-    },
-    {
-      "id": "volume",
-      "term": "Volume",
-      "category": "Indices"
+      "type": "concept",
+      "title": "Dealer Long Gamma",
+      "summary": "ディーラーが正Gammaを持つ状態。",
+      "tags": [
+        "options",
+        "dealer-flow"
+      ],
+      "related": [
+        "gex",
+        "gamma-flip",
+        "pinning"
+      ],
+      "url": "glossary/dealer-long-gamma.html"
     },
     {
       "id": "zero-dte",
-      "term": "0DTE",
-      "category": "Indices"
+      "type": "concept",
+      "title": "0DTE",
+      "summary": "当日満期オプション。",
+      "tags": [
+        "options",
+        "0dte",
+        "intraday"
+      ],
+      "related": [
+        "gamma-flip",
+        "gex",
+        "charm"
+      ],
+      "url": "glossary/zero-dte.html"
     },
     {
-      "id": "opex",
-      "term": "OPEX",
-      "category": "Indices"
+      "id": "gex-dashboard",
+      "type": "dashboard",
+      "title": "GEX Dashboard",
+      "summary": "オプション建玉から推定されるディーラーのGamma、Vanna、Charm、0DTEフローを統合するダッシュボード。",
+      "tags": [
+        "dashboard",
+        "options",
+        "gex"
+      ],
+      "related": [
+        "gamma-flip",
+        "gex",
+        "vanna",
+        "charm",
+        "zero-dte"
+      ],
+      "url": "dashboard/gex.html"
     },
     {
-      "id": "skew",
-      "term": "Skew",
-      "category": "Indices"
+      "id": "oil-dashboard",
+      "type": "dashboard",
+      "title": "Oil Regime Dashboard",
+      "summary": "Brent、WTI、Dubai、OSP、Crack、Tanker、Hormuzを統合。",
+      "tags": [
+        "dashboard",
+        "oil",
+        "energy"
+      ],
+      "related": [
+        "oil",
+        "shipping"
+      ],
+      "url": "dashboard/oil.html"
     },
     {
-      "id": "event-pass",
-      "term": "Event Pass",
-      "category": "Macro/Event"
+      "id": "usdjpy-dashboard",
+      "type": "dashboard",
+      "title": "USDJPY Intervention Dashboard",
+      "summary": "速度、水準、政治、OIS、FX Optionsから介入警戒度を推定。",
+      "tags": [
+        "dashboard",
+        "usdjpy",
+        "intervention"
+      ],
+      "related": [
+        "fx",
+        "rates"
+      ],
+      "url": "dashboard/usdjpy.html"
     },
     {
-      "id": "realized-settle",
-      "term": "Realized Settle",
-      "category": "Macro/Event"
+      "id": "rates-dashboard",
+      "type": "dashboard",
+      "title": "Rates Dashboard",
+      "summary": "UST、JGB、OIS、MOVE、Yield Curve、DV01を監視。",
+      "tags": [
+        "dashboard",
+        "rates"
+      ],
+      "related": [
+        "rates",
+        "macro"
+      ],
+      "url": "dashboard/rates.html"
     },
     {
-      "id": "event-vol",
-      "term": "Event Vol",
-      "category": "Macro/Event"
+      "id": "shipping-dashboard",
+      "type": "dashboard",
+      "title": "Shipping Dashboard",
+      "summary": "BDI、VLCC、Container、Orderbook、Fleet Supplyを統合。",
+      "tags": [
+        "dashboard",
+        "shipping"
+      ],
+      "related": [
+        "shipping",
+        "oil"
+      ],
+      "url": "dashboard/shipping.html"
     },
     {
-      "id": "earnings-vol",
-      "term": "Earnings Vol",
-      "category": "Macro/Event"
+      "id": "gold-dashboard",
+      "type": "dashboard",
+      "title": "Gold / Silver Dashboard",
+      "summary": "Lease Rate、COMEX、LBMA、EFP、ETF Flowを監視。",
+      "tags": [
+        "dashboard",
+        "metals"
+      ],
+      "related": [
+        "gold",
+        "silver"
+      ],
+      "url": "dashboard/gold.html"
     },
     {
-      "id": "cpi-trade",
-      "term": "CPI Trade",
-      "category": "Macro/Event"
+      "id": "gamma-flip-map",
+      "type": "chart",
+      "title": "Gamma Flip Strike Map",
+      "summary": "ストライク別GEXとGamma Flipを示す概念チャート。",
+      "tags": [
+        "chart",
+        "gex",
+        "gamma-flip"
+      ],
+      "related": [
+        "gamma-flip",
+        "gex"
+      ],
+      "url": "dashboard/gex.html"
     },
     {
-      "id": "fomc-trade",
-      "term": "FOMC Trade",
-      "category": "Macro/Event"
+      "id": "dealer-flow-regime-note",
+      "type": "research",
+      "title": "Dealer Flow Regime Framework",
+      "summary": "GEX、Vanna、Charm、0DTEを統合して短期レジームを判定する設計メモ。",
+      "tags": [
+        "gex",
+        "dealer-flow",
+        "options"
+      ],
+      "related": [
+        "gamma-flip",
+        "gex"
+      ],
+      "url": "notes/"
     },
     {
-      "id": "event-premium",
-      "term": "Event Premium",
-      "category": "Macro/Event"
+      "id": "oil-saudi-framework",
+      "type": "research",
+      "title": "WTIを見るな、Saudiを見ろ",
+      "summary": "原油レジームをSaudi政策、OSP、余剰生産能力、Crack、Tankerから見る分析。",
+      "tags": [
+        "oil",
+        "saudi",
+        "energy"
+      ],
+      "related": [
+        "oil-dashboard"
+      ],
+      "url": "notes/"
     },
     {
-      "id": "gap-risk",
-      "term": "Gap Risk",
-      "category": "Macro/Event"
-    },
-    {
-      "id": "binary-event",
-      "term": "Binary Event",
-      "category": "Macro/Event"
-    },
-    {
-      "id": "catalyst",
-      "term": "Catalyst",
-      "category": "Macro/Event"
+      "id": "usdjpy-intervention-model",
+      "type": "research",
+      "title": "USDJPY Intervention Model",
+      "summary": "速度×水準×政治×OIS×投機ポジションで介入警戒度を推定するモデル。",
+      "tags": [
+        "fx",
+        "usdjpy",
+        "intervention"
+      ],
+      "related": [
+        "usdjpy-dashboard"
+      ],
+      "url": "notes/"
     }
   ]
 }

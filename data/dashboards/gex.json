@@ -1,0 +1,23 @@
+{
+  "id":"gex-dashboard",
+  "type":"dashboard",
+  "title":"GEX Dashboard",
+  "summary":"オプション建玉から推定されるディーラーのGamma、Vanna、Charm、0DTEフローを統合するダッシュボード。",
+  "metrics":[
+    {"id":"spot","label":"Spot","value":"42,000","note":"現在価格の入力欄に置換予定"},
+    {"id":"net-gex","label":"Net GEX","value":"+8.2bn","note":"Positive Gamma"},
+    {"id":"gamma-flip","label":"Gamma Flip","value":"41,250","note":"SpotはFlip上"},
+    {"id":"call-wall","label":"Call Wall","value":"43,000","note":"上値抵抗候補"},
+    {"id":"put-wall","label":"Put Wall","value":"40,000","note":"下値支持候補"},
+    {"id":"zero-dte-share","label":"0DTE Share","value":"37%","note":"短期Gamma注意"},
+    {"id":"vanna","label":"Vanna","value":"Positive","note":"IV低下時に株支援"},
+    {"id":"charm","label":"Charm","value":"Positive","note":"時間経過で株支援"}
+  ],
+  "regime":{"name":"Positive Gamma / Positive Vanna / Positive Charm","interpretation":"現在は平均回帰しやすいが、Call Wall上抜けではTail ChaseとSqueeze Fearが重なり、トレンド加速に移行する可能性がある。","dealer_action":"Spot上昇時は売りヘッジ、下落時は買いヘッジが出やすい。ただしGamma Flipを下回ると順張り化する。"},
+  "trader_watch":["SpotとGamma Flipの距離","Call Wallの突破可否","Put Wall接近時の流動性","0DTE比率の急上昇","IV低下時のVanna買い"],
+  "strike_map":[
+    {"strike":39000,"gex":-2.1},{"strike":40000,"gex":4.8},{"strike":41000,"gex":1.2},{"strike":41250,"gex":0.0},{"strike":42000,"gex":3.4},{"strike":43000,"gex":7.1},{"strike":44000,"gex":2.2}
+  ],
+  "related":["gamma-flip","gex","vanna","charm","zero-dte"],
+  "tags":["dashboard","options","gex"]
+}

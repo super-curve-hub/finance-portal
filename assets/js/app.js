@@ -1,14 +1,14 @@
-const $ = (s)=>document.querySelector(s); const $$=(s)=>[...document.querySelectorAll(s)];
-const state={glossary:[], modules:[], filter:'all', q:''};
-function stars(n){return '★'.repeat(n)+'☆'.repeat(Math.max(0,5-n));}
-async function loadJson(path){const r=await fetch(path); return r.json();}
-function setTheme(){const cur=localStorage.getItem('theme')||'dark'; document.documentElement.dataset.theme=cur;}
-function toggleTheme(){const next=(document.documentElement.dataset.theme==='dark')?'light':'dark';localStorage.setItem('theme',next);setTheme();}
-function renderModules(){const el=$('#modules'); if(!el)return; el.innerHTML=state.modules.map(m=>`<article class="card module-card"><div class="module-icon">${m.icon}</div><h3>${m.title}</h3><p class="muted">${m.description}</p><a class="chip" href="${m.href}">開く</a></article>`).join('');}
-function termHtml(t){const fav=localStorage.getItem('fav:'+t.id)?'★':'☆';return `<article class="card term-card" id="${t.id}"><button class="chip" onclick="toggleFav('${t.id}')">${fav}</button><h3>${t.term}</h3><p><span class="badge">${t.category}</span><span class="badge">${t.kana}</span></p><p>${t.simple}</p><p><span class="bull">Bull ${stars(t.bull)}</span><br><span class="bear">Bear ${stars(t.bear)}</span></p><button onclick="openTerm('${t.id}')">詳しく見る</button><div class="detail" data-detail="${t.id}"><div class="field"><b>🇺🇸 英語の意味</b>${t.english}</div><div class="field"><b>🇯🇵 わかりやすい説明</b>${t.description}</div><div class="field"><b>📈 相場への影響</b>${t.impact}</div><div class="field"><b>💹 ディーラーは何をするか</b>${t.dealer}</div><div class="field"><b>🎯 トレーダーは何を見るか</b>${t.trader}</div><div class="field"><b>📰 レポート例</b><blockquote>${t.example}</blockquote></div><div class="field related"><b>関連用語</b>${(t.related||[]).map(id=>`<a href="#${id}" onclick="openTerm('${id}')">${id}</a>`).join('')}</div><div class="field"><b>自分用メモ</b><textarea class="note" data-note="${t.id}" oninput="saveNote('${t.id}',this.value)">${localStorage.getItem('note:'+t.id)||''}</textarea></div></div></article>`}
-function renderTerms(){const el=$('#terms'); if(!el)return; const q=state.q.toLowerCase(); let rows=state.glossary.filter(t=>(state.filter==='all'||t.category===state.filter)&&JSON.stringify(t).toLowerCase().includes(q)); el.innerHTML=rows.map(termHtml).join('')||'<p class="muted">該当なし</p>';}
-function openTerm(id){const el=document.querySelector(`[data-detail="${id}"]`); if(el){el.classList.toggle('active'); location.hash=id;}}
-function toggleFav(id){const k='fav:'+id; localStorage.getItem(k)?localStorage.removeItem(k):localStorage.setItem(k,'1'); renderTerms();}
-function saveNote(id,val){localStorage.setItem('note:'+id,val)}
-async function init(){setTheme(); const tb=$('#themeBtn'); if(tb)tb.onclick=toggleTheme; state.modules=await loadJson('data/modules.json'); state.glossary=await loadJson('data/glossary.json'); renderModules(); renderTerms(); const search=$('#search'); if(search)search.oninput=e=>{state.q=e.target.value;renderTerms()}; const cats=$('#categories'); if(cats){const cs=['all',...new Set(state.glossary.map(t=>t.category))]; cats.innerHTML=cs.map(c=>`<button class="chip" onclick="state.filter='${c}';renderTerms()">${c}</button>`).join('');}}
-init(); if('serviceWorker'in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+const $ = (s, r=document)=>r.querySelector(s);
+const $$ = (s, r=document)=>Array.from(r.querySelectorAll(s));
+const base = location.pathname.includes('/finance-portal/') ? '/finance-portal/' : './';
+
+function toggleTheme(){
+  const root=document.documentElement; root.classList.toggle('light');
+  localStorage.setItem('sc-theme', root.classList.contains('light')?'light':'dark');
+}
+function initTheme(){ if(localStorage.getItem('sc-theme')==='light') document.documentElement.classList.add('light'); }
+async function fetchJson(path){ const res=await fetch(path); if(!res.ok) throw new Error(path); return res.json(); }
+function nav(){return `<header class="topbar"><div class="shell nav"><div class="brand">SUPER CURVE TERMINAL</div><nav class="navlinks"><a href="${base}">Home</a><a href="${base}glossary/">Handbook</a><a href="${base}dashboard/gex.html">GEX</a><a href="${base}search/">AI Search</a><button onclick="toggleTheme()">Theme</button></nav></div></header>`}
+function footer(){return `<footer class="footer"><div class="shell">Knowledge × Market Data × Research. Built for GitHub Pages.</div></footer>`}
+function installShell(){document.body.insertAdjacentHTML('afterbegin',nav());document.body.insertAdjacentHTML('beforeend',footer());initTheme(); if('serviceWorker' in navigator) navigator.serviceWorker.register(`${base}sw.js`).catch(()=>{});}
+document.addEventListener('DOMContentLoaded', installShell);

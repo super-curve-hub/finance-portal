@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SUPER CURVE Object Schema",
+  "type": "object",
+  "required": ["id", "type", "title", "summary", "tags"],
+  "properties": {
+    "id": {"type":"string"},
+    "type": {"enum":["concept","dashboard","research","chart","news","metric"]},
+    "title": {"type":"string"},
+    "summary": {"type":"string"},
+    "tags": {"type":"array", "items":{"type":"string"}},
+    "related": {"type":"array", "items":{"type":"string"}},
+    "dashboards": {"type":"array", "items":{"type":"string"}},
+    "research": {"type":"array", "items":{"type":"string"}},
+    "charts": {"type":"array", "items":{"type":"string"}}
+  }
+}

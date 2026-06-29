@@ -1,0 +1,7 @@
+{
+  "research": [
+    {"id":"dealer-flow-regime-note","type":"research","title":"Dealer Flow Regime Framework","summary":"GEX、Vanna、Charm、0DTEを統合して短期レジームを判定する設計メモ。","tags":["gex","dealer-flow","options"],"related":["gamma-flip","gex"]},
+    {"id":"oil-saudi-framework","type":"research","title":"WTIを見るな、Saudiを見ろ","summary":"原油レジームをSaudi政策、OSP、余剰生産能力、Crack、Tankerから見る分析。","tags":["oil","saudi","energy"],"related":["oil-dashboard"]},
+    {"id":"usdjpy-intervention-model","type":"research","title":"USDJPY Intervention Model","summary":"速度×水準×政治×OIS×投機ポジションで介入警戒度を推定するモデル。","tags":["fx","usdjpy","intervention"],"related":["usdjpy-dashboard"]}
+  ]
+}

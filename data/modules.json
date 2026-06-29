@@ -1,62 +1,13 @@
-[
-  {
-    "icon": "📖",
-    "title": "Option Handbook",
-    "description": "オプション・ボラティリティ実務辞典。GEX、Vanna、Charm、Skew、0DTEを整理。",
-    "href": "#terms"
-  },
-  {
-    "icon": "📊",
-    "title": "GEX Dashboard",
-    "description": "Gamma Exposure、Call Wall、Put Wall、Gamma Flipを監視。",
-    "href": "dashboard/gex.html"
-  },
-  {
-    "icon": "📈",
-    "title": "Oil Regime",
-    "description": "原油、クラック、在庫、OSP、ホルムズリスクを統合。",
-    "href": "dashboard/oil.html"
-  },
-  {
-    "icon": "💴",
-    "title": "USDJPY Intervention",
-    "description": "速度、水準、政治イベント、投機筋ポジションから介入警戒を判定。",
-    "href": "dashboard/usdjpy.html"
-  },
-  {
-    "icon": "🏦",
-    "title": "Rates Dashboard",
-    "description": "OIS、JGB、UST、スロープ、曲率、実質金利を監視。",
-    "href": "dashboard/rates.html"
-  },
-  {
-    "icon": "🚢",
-    "title": "Shipping Dashboard",
-    "description": "BDI、コンテナ運賃、バンカー燃料、船腹需給を確認。",
-    "href": "dashboard/shipping.html"
-  },
-  {
-    "icon": "🪙",
-    "title": "Gold / Silver",
-    "description": "Lease Rate、COMEX在庫、EFP、実質金利を統合。",
-    "href": "dashboard/gold.html"
-  },
-  {
-    "icon": "📚",
-    "title": "Macro Library",
-    "description": "マクロ・市場構造・イベント分析の知識ベース。",
-    "href": "notes/index.html"
-  },
-  {
-    "icon": "📝",
-    "title": "Research Notes",
-    "description": "自分の相場メモ、note下書き、検証結果を蓄積。",
-    "href": "notes/index.html"
-  },
-  {
-    "icon": "🤖",
-    "title": "AI Search",
-    "description": "将来のRAG検索・自然言語検索用インターフェース。",
-    "href": "api/search.json"
-  }
-]
+{
+  "modules": [
+    {"id":"option-handbook","icon":"📖","title":"Option Handbook","summary":"GEX、Vanna、Charm、Skew、0DTEを含む実務辞典。","url":"glossary/","tags":["concept","options","volatility"]},
+    {"id":"gex-dashboard","icon":"📊","title":"GEX Dashboard","summary":"Gamma Flip、Call Wall、Put Wall、Dealer Flowを監視。","url":"dashboard/gex.html","tags":["dashboard","gex"]},
+    {"id":"oil-dashboard","icon":"🛢","title":"Oil Regime Dashboard","summary":"Brent、WTI、OSP、Crack、Hormuz、Tankerを統合。","url":"dashboard/oil.html","tags":["dashboard","oil"]},
+    {"id":"usdjpy-dashboard","icon":"💴","title":"USDJPY Intervention","summary":"速度、水準、政治、OIS、FX Optionsから介入警戒度を推定。","url":"dashboard/usdjpy.html","tags":["dashboard","fx"]},
+    {"id":"rates-dashboard","icon":"🏦","title":"Rates Dashboard","summary":"UST、JGB、OIS、MOVE、Yield Curve、DV01を監視。","url":"dashboard/rates.html","tags":["dashboard","rates"]},
+    {"id":"shipping-dashboard","icon":"🚢","title":"Shipping Dashboard","summary":"BDI、VLCC、Container、Orderbook、Fleet Supplyを統合。","url":"dashboard/shipping.html","tags":["dashboard","shipping"]},
+    {"id":"gold-dashboard","icon":"🪙","title":"Gold / Silver Dashboard","summary":"Lease Rate、COMEX、LBMA、EFP、ETF Flowを監視。","url":"dashboard/gold.html","tags":["dashboard","metals"]},
+    {"id":"macro-library","icon":"📚","title":"Macro Library","summary":"note、Markdown、リサーチ記事を構造化。","url":"notes/","tags":["research","macro"]},
+    {"id":"ai-search","icon":"🤖","title":"AI Search","summary":"全JSONオブジェクトを横断検索。将来RAG化。","url":"search/","tags":["search","rag"]}
+  ]
+}
