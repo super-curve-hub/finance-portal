@@ -1,0 +1,4879 @@
+[
+  {
+    "id": "implied-volatility",
+    "term": "Implied Volatility",
+    "english": "Implied Volatility",
+    "katakana": "IV",
+    "category": "Volatility",
+    "oneLine": "市場が織り込む将来の変動率",
+    "plainJapanese": "Implied Volatilityは、市場が織り込む将来の変動率を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Implied Volatility is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてImplied Volatilityの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Implied Volatility dynamics.",
+        "ja": "フローはImplied Volatilityの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Implied Volatility alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてImplied Volatilityを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "realized-volatility",
+    "term": "Realized Volatility",
+    "english": "Realized Volatility",
+    "katakana": "RV",
+    "category": "Volatility",
+    "oneLine": "実際に発生した価格変動率",
+    "plainJapanese": "Realized Volatilityは、実際に発生した価格変動率を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Realized Volatility is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRealized Volatilityの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Realized Volatility dynamics.",
+        "ja": "フローはRealized Volatilityの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Realized Volatility alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRealized Volatilityを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "historical-volatility",
+    "term": "Historical Volatility",
+    "english": "Historical Volatility",
+    "katakana": "HV",
+    "category": "Volatility",
+    "oneLine": "過去データから計算する変動率",
+    "plainJapanese": "Historical Volatilityは、過去データから計算する変動率を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Historical Volatility is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてHistorical Volatilityの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Historical Volatility dynamics.",
+        "ja": "フローはHistorical Volatilityの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Historical Volatility alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてHistorical Volatilityを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vol-risk-premium",
+    "term": "Vol Risk Premium",
+    "english": "Vol Risk Premium",
+    "katakana": "VRP",
+    "category": "Volatility",
+    "oneLine": "IVがRVを上回る上乗せ分",
+    "plainJapanese": "Vol Risk Premiumは、IVがRVを上回る上乗せ分を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vol Risk Premium is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVol Risk Premiumの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vol Risk Premium dynamics.",
+        "ja": "フローはVol Risk Premiumの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vol Risk Premium alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVol Risk Premiumを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "forward-volatility",
+    "term": "Forward Volatility",
+    "english": "Forward Volatility",
+    "katakana": "Forward Vol",
+    "category": "Volatility",
+    "oneLine": "将来期間だけのボラ水準",
+    "plainJapanese": "Forward Volatilityは、将来期間だけのボラ水準を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Forward Volatility is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてForward Volatilityの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Forward Volatility dynamics.",
+        "ja": "フローはForward Volatilityの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Forward Volatility alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてForward Volatilityを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vol-surface",
+    "term": "Vol Surface",
+    "english": "Vol Surface",
+    "katakana": "Vol Surface",
+    "category": "Volatility",
+    "oneLine": "満期とストライク別のIV曲面",
+    "plainJapanese": "Vol Surfaceは、満期とストライク別のIV曲面を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vol Surface is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVol Surfaceの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vol Surface dynamics.",
+        "ja": "フローはVol Surfaceの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vol Surface alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVol Surfaceを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vol-smile",
+    "term": "Vol Smile",
+    "english": "Vol Smile",
+    "katakana": "Vol Smile",
+    "category": "Volatility",
+    "oneLine": "ストライク別にIVが曲がる形",
+    "plainJapanese": "Vol Smileは、ストライク別にIVが曲がる形を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vol Smile is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVol Smileの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vol Smile dynamics.",
+        "ja": "フローはVol Smileの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vol Smile alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVol Smileを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vol-skew",
+    "term": "Vol Skew",
+    "english": "Vol Skew",
+    "katakana": "Skew",
+    "category": "Volatility",
+    "oneLine": "上下方向のIV格差",
+    "plainJapanese": "Vol Skewは、上下方向のIV格差を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vol Skew is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVol Skewの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vol Skew dynamics.",
+        "ja": "フローはVol Skewの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vol Skew alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVol Skewを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "skew"
+  },
+  {
+    "id": "vol-crush",
+    "term": "Vol Crush",
+    "english": "Vol Crush",
+    "katakana": "Vol Crush",
+    "category": "Volatility",
+    "oneLine": "イベント後にIVが急低下すること",
+    "plainJapanese": "Vol Crushは、イベント後にIVが急低下することを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vol Crush is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVol Crushの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vol Crush dynamics.",
+        "ja": "フローはVol Crushの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vol Crush alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVol Crushを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "event-pass",
+      "normalization"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "normalization",
+    "term": "Normalization",
+    "english": "Normalization",
+    "katakana": "Normalization",
+    "category": "Volatility",
+    "oneLine": "イベント後に市場が平常運転へ戻ること",
+    "plainJapanese": "Normalizationは、イベント後に市場が平常運転へ戻ることを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Normalization is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてNormalizationの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Normalization dynamics.",
+        "ja": "フローはNormalizationの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Normalization alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてNormalizationを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "event-pass"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "delta",
+    "term": "Delta",
+    "english": "Delta",
+    "katakana": "Delta",
+    "category": "Greeks",
+    "oneLine": "原資産が動いた時のオプション価格の一次感応度",
+    "plainJapanese": "Deltaは、原資産が動いた時のオプション価格の一次感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Delta is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDeltaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Delta dynamics.",
+        "ja": "フローはDeltaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Delta alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDeltaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "gamma",
+    "term": "Gamma",
+    "english": "Gamma",
+    "katakana": "Gamma",
+    "category": "Greeks",
+    "oneLine": "デルタがどれだけ変化するかを示す二次感応度",
+    "plainJapanese": "Gammaは、デルタがどれだけ変化するかを示す二次感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Gamma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてGammaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Gamma dynamics.",
+        "ja": "フローはGammaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Gamma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてGammaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "vega",
+    "term": "Vega",
+    "english": "Vega",
+    "katakana": "Vega",
+    "category": "Greeks",
+    "oneLine": "IVが動いた時のオプション価格感応度",
+    "plainJapanese": "Vegaは、IVが動いた時のオプション価格感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vega is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVegaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vega dynamics.",
+        "ja": "フローはVegaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vega alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVegaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "theta",
+    "term": "Theta",
+    "english": "Theta",
+    "katakana": "Theta",
+    "category": "Greeks",
+    "oneLine": "時間経過によるオプション価値の減少",
+    "plainJapanese": "Thetaは、時間経過によるオプション価値の減少を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Theta is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてThetaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Theta dynamics.",
+        "ja": "フローはThetaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Theta alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてThetaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "rho",
+    "term": "Rho",
+    "english": "Rho",
+    "katakana": "Rho",
+    "category": "Greeks",
+    "oneLine": "金利変化に対する価格感応度",
+    "plainJapanese": "Rhoは、金利変化に対する価格感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Rho is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRhoの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Rho dynamics.",
+        "ja": "フローはRhoの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Rho alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRhoを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vanna",
+    "term": "Vanna",
+    "english": "Vanna",
+    "katakana": "Vanna",
+    "category": "Greeks",
+    "oneLine": "IV変化によるデルタ変化",
+    "plainJapanese": "Vannaは、IV変化によるデルタ変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "IV低下・上昇で変化したデルタを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vanna is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVannaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vanna dynamics.",
+        "ja": "フローはVannaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vanna alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVannaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "charm",
+      "call-wall",
+      "put-wall",
+      "zero-dte"
+    ],
+    "chartType": "vanna"
+  },
+  {
+    "id": "charm",
+    "term": "Charm",
+    "english": "Charm",
+    "katakana": "Charm",
+    "category": "Greeks",
+    "oneLine": "時間経過によるデルタ変化",
+    "plainJapanese": "Charmは、時間経過によるデルタ変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "時間経過で変化したデルタを日次で調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Charm is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCharmの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Charm dynamics.",
+        "ja": "フローはCharmの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Charm alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCharmを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "call-wall",
+      "put-wall",
+      "zero-dte"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vomma",
+    "term": "Vomma",
+    "english": "Vomma",
+    "katakana": "Vomma",
+    "category": "Greeks",
+    "oneLine": "IV変化によるVega変化",
+    "plainJapanese": "Vommaは、IV変化によるVega変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vomma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVommaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vomma dynamics.",
+        "ja": "フローはVommaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vomma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVommaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "color",
+    "term": "Color",
+    "english": "Color",
+    "katakana": "Color",
+    "category": "Greeks",
+    "oneLine": "時間経過によるGamma変化",
+    "plainJapanese": "Colorは、時間経過によるGamma変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Color is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてColorの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Color dynamics.",
+        "ja": "フローはColorの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Color alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてColorを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "speed",
+    "term": "Speed",
+    "english": "Speed",
+    "katakana": "Speed",
+    "category": "Greeks",
+    "oneLine": "価格変化によるGamma変化",
+    "plainJapanese": "Speedは、価格変化によるGamma変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Speed is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてSpeedの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Speed dynamics.",
+        "ja": "フローはSpeedの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Speed alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてSpeedを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "ultima",
+    "term": "Ultima",
+    "english": "Ultima",
+    "katakana": "Ultima",
+    "category": "Greeks",
+    "oneLine": "IV変化によるVomma変化",
+    "plainJapanese": "Ultimaは、IV変化によるVomma変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Ultima is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてUltimaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Ultima dynamics.",
+        "ja": "フローはUltimaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Ultima alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてUltimaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "zomma",
+    "term": "Zomma",
+    "english": "Zomma",
+    "katakana": "Zomma",
+    "category": "Greeks",
+    "oneLine": "IV変化によるGamma変化",
+    "plainJapanese": "Zommaは、IV変化によるGamma変化を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Zomma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてZommaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Zomma dynamics.",
+        "ja": "フローはZommaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Zomma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてZommaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "dual-delta",
+    "term": "Dual Delta",
+    "english": "Dual Delta",
+    "katakana": "Dual Delta",
+    "category": "Greeks",
+    "oneLine": "ストライク変化に対する価格感応度",
+    "plainJapanese": "Dual Deltaは、ストライク変化に対する価格感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dual Delta is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDual Deltaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dual Delta dynamics.",
+        "ja": "フローはDual Deltaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dual Delta alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDual Deltaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "dual-gamma",
+    "term": "Dual Gamma",
+    "english": "Dual Gamma",
+    "katakana": "Dual Gamma",
+    "category": "Greeks",
+    "oneLine": "ストライク方向の二次感応度",
+    "plainJapanese": "Dual Gammaは、ストライク方向の二次感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dual Gamma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDual Gammaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dual Gamma dynamics.",
+        "ja": "フローはDual Gammaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dual Gamma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDual Gammaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "elasticity",
+    "term": "Elasticity",
+    "english": "Elasticity",
+    "katakana": "Elasticity",
+    "category": "Greeks",
+    "oneLine": "オプションのレバレッジ感応度",
+    "plainJapanese": "Elasticityは、オプションのレバレッジ感応度を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Elasticity is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてElasticityの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Elasticity dynamics.",
+        "ja": "フローはElasticityの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Elasticity alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてElasticityを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "gamma-exposure",
+    "term": "Gamma Exposure",
+    "english": "Gamma Exposure",
+    "katakana": "GEX",
+    "category": "Dealer Flow",
+    "oneLine": "市場全体のガンマ量",
+    "plainJapanese": "Gamma Exposureは、市場全体のガンマ量を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Gamma Exposure is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてGamma Exposureの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Gamma Exposure dynamics.",
+        "ja": "フローはGamma Exposureの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Gamma Exposure alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてGamma Exposureを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall",
+      "zero-dte"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "net-gex",
+    "term": "Net GEX",
+    "english": "Net GEX",
+    "katakana": "Net GEX",
+    "category": "Dealer Flow",
+    "oneLine": "コールとプットを合算した正味ガンマ",
+    "plainJapanese": "Net GEXは、コールとプットを合算した正味ガンマを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Net GEX is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてNet GEXの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Net GEX dynamics.",
+        "ja": "フローはNet GEXの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Net GEX alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてNet GEXを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "gamma-flip",
+    "term": "Gamma Flip",
+    "english": "Gamma Flip",
+    "katakana": "Gamma Flip",
+    "category": "Dealer Flow",
+    "oneLine": "ディーラーのヘッジ方向が逆転する価格",
+    "plainJapanese": "Gamma Flipは、ディーラーのヘッジ方向が逆転する価格を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "価格がFlipを上抜けると買いヘッジ、下抜けると売りヘッジが増えやすい。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Gamma Flip is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてGamma Flipの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Gamma Flip dynamics.",
+        "ja": "フローはGamma Flipの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Gamma Flip alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてGamma Flipを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall",
+      "zero-dte"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "positive-gamma",
+    "term": "Positive Gamma",
+    "english": "Positive Gamma",
+    "katakana": "Positive Gamma",
+    "category": "Dealer Flow",
+    "oneLine": "逆張りヘッジが出やすい環境",
+    "plainJapanese": "Positive Gammaは、逆張りヘッジが出やすい環境を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Positive Gamma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPositive Gammaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Positive Gamma dynamics.",
+        "ja": "フローはPositive Gammaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Positive Gamma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPositive Gammaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "negative-gamma",
+    "term": "Negative Gamma",
+    "english": "Negative Gamma",
+    "katakana": "Negative Gamma",
+    "category": "Dealer Flow",
+    "oneLine": "順張りヘッジが出やすい環境",
+    "plainJapanese": "Negative Gammaは、順張りヘッジが出やすい環境を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Negative Gamma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてNegative Gammaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Negative Gamma dynamics.",
+        "ja": "フローはNegative Gammaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Negative Gamma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてNegative Gammaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "dealer-long-gamma",
+    "term": "Dealer Long Gamma",
+    "english": "Dealer Long Gamma",
+    "katakana": "Long Gamma",
+    "category": "Dealer Flow",
+    "oneLine": "ディーラーが正ガンマを持つ状態",
+    "plainJapanese": "Dealer Long Gammaは、ディーラーが正ガンマを持つ状態を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dealer Long Gamma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDealer Long Gammaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dealer Long Gamma dynamics.",
+        "ja": "フローはDealer Long Gammaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dealer Long Gamma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDealer Long Gammaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "dealer-short-gamma",
+    "term": "Dealer Short Gamma",
+    "english": "Dealer Short Gamma",
+    "katakana": "Short Gamma",
+    "category": "Dealer Flow",
+    "oneLine": "ディーラーが負ガンマを持つ状態",
+    "plainJapanese": "Dealer Short Gammaは、ディーラーが負ガンマを持つ状態を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dealer Short Gamma is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDealer Short Gammaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dealer Short Gamma dynamics.",
+        "ja": "フローはDealer Short Gammaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dealer Short Gamma alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDealer Short Gammaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "call-wall",
+    "term": "Call Wall",
+    "english": "Call Wall",
+    "katakana": "Call Wall",
+    "category": "Dealer Flow",
+    "oneLine": "コール建玉が集中する上値帯",
+    "plainJapanese": "Call Wallは、コール建玉が集中する上値帯を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Call Wall is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCall Wallの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Call Wall dynamics.",
+        "ja": "フローはCall Wallの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Call Wall alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCall Wallを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "put-wall",
+      "zero-dte"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "put-wall",
+    "term": "Put Wall",
+    "english": "Put Wall",
+    "katakana": "Put Wall",
+    "category": "Dealer Flow",
+    "oneLine": "プット建玉が集中する下値帯",
+    "plainJapanese": "Put Wallは、プット建玉が集中する下値帯を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Put Wall is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPut Wallの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Put Wall dynamics.",
+        "ja": "フローはPut Wallの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Put Wall alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPut Wallを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "zero-dte"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "gamma-wall",
+    "term": "Gamma Wall",
+    "english": "Gamma Wall",
+    "katakana": "Gamma Wall",
+    "category": "Dealer Flow",
+    "oneLine": "ガンマが大きく集中する価格帯",
+    "plainJapanese": "Gamma Wallは、ガンマが大きく集中する価格帯を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Gamma Wall is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてGamma Wallの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Gamma Wall dynamics.",
+        "ja": "フローはGamma Wallの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Gamma Wall alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてGamma Wallを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "dealer-hedging",
+    "term": "Dealer Hedging",
+    "english": "Dealer Hedging",
+    "katakana": "Dealer Hedging",
+    "category": "Dealer Flow",
+    "oneLine": "ディーラーのデルタ調整売買",
+    "plainJapanese": "Dealer Hedgingは、ディーラーのデルタ調整売買を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dealer Hedging is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDealer Hedgingの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dealer Hedging dynamics.",
+        "ja": "フローはDealer Hedgingの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dealer Hedging alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDealer Hedgingを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "dealer-rebalancing",
+    "term": "Dealer Rebalancing",
+    "english": "Dealer Rebalancing",
+    "katakana": "Dealer Rebalancing",
+    "category": "Dealer Flow",
+    "oneLine": "価格・IV・時間変化に伴うヘッジ再調整",
+    "plainJapanese": "Dealer Rebalancingは、価格・IV・時間変化に伴うヘッジ再調整を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dealer Rebalancing is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDealer Rebalancingの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dealer Rebalancing dynamics.",
+        "ja": "フローはDealer Rebalancingの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dealer Rebalancing alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDealer Rebalancingを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "dealer-unwind",
+    "term": "Dealer Unwind",
+    "english": "Dealer Unwind",
+    "katakana": "Dealer Unwind",
+    "category": "Dealer Flow",
+    "oneLine": "満期やイベント後のヘッジ解消",
+    "plainJapanese": "Dealer Unwindは、満期やイベント後のヘッジ解消を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dealer Unwind is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDealer Unwindの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dealer Unwind dynamics.",
+        "ja": "フローはDealer Unwindの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dealer Unwind alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDealer Unwindを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "delta-hedging",
+    "term": "Delta Hedging",
+    "english": "Delta Hedging",
+    "katakana": "Delta Hedging",
+    "category": "Dealer Flow",
+    "oneLine": "デルタを中立化する売買",
+    "plainJapanese": "Delta Hedgingは、デルタを中立化する売買を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Delta Hedging is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDelta Hedgingの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Delta Hedging dynamics.",
+        "ja": "フローはDelta Hedgingの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Delta Hedging alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDelta Hedgingを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "option-inventory",
+    "term": "Option Inventory",
+    "english": "Option Inventory",
+    "katakana": "Option Inventory",
+    "category": "Dealer Flow",
+    "oneLine": "ディーラーが抱えるオプション在庫",
+    "plainJapanese": "Option Inventoryは、ディーラーが抱えるオプション在庫を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Option Inventory is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてOption Inventoryの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Option Inventory dynamics.",
+        "ja": "フローはOption Inventoryの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Option Inventory alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてOption Inventoryを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "pinning",
+    "term": "Pinning",
+    "english": "Pinning",
+    "katakana": "Pinning",
+    "category": "Market Structure",
+    "oneLine": "満期日に価格が特定ストライクへ寄る現象",
+    "plainJapanese": "Pinningは、満期日に価格が特定ストライクへ寄る現象を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Pinning is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPinningの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Pinning dynamics.",
+        "ja": "フローはPinningの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Pinning alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPinningを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "pin-risk",
+    "term": "Pin Risk",
+    "english": "Pin Risk",
+    "katakana": "Pin Risk",
+    "category": "Market Structure",
+    "oneLine": "満期近辺で権利行使判定が不安定になるリスク",
+    "plainJapanese": "Pin Riskは、満期近辺で権利行使判定が不安定になるリスクを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Pin Risk is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPin Riskの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Pin Risk dynamics.",
+        "ja": "フローはPin Riskの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Pin Risk alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPin Riskを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "sticky-strike",
+    "term": "Sticky Strike",
+    "english": "Sticky Strike",
+    "katakana": "Sticky Strike",
+    "category": "Market Structure",
+    "oneLine": "ストライク基準でIVが固定される考え方",
+    "plainJapanese": "Sticky Strikeは、ストライク基準でIVが固定される考え方を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Sticky Strike is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてSticky Strikeの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Sticky Strike dynamics.",
+        "ja": "フローはSticky Strikeの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Sticky Strike alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてSticky Strikeを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "sticky-delta",
+    "term": "Sticky Delta",
+    "english": "Sticky Delta",
+    "katakana": "Sticky Delta",
+    "category": "Market Structure",
+    "oneLine": "デルタ基準でIVが固定される考え方",
+    "plainJapanese": "Sticky Deltaは、デルタ基準でIVが固定される考え方を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Sticky Delta is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてSticky Deltaの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Sticky Delta dynamics.",
+        "ja": "フローはSticky Deltaの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Sticky Delta alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてSticky Deltaを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "liquidity-vacuum",
+    "term": "Liquidity Vacuum",
+    "english": "Liquidity Vacuum",
+    "katakana": "Liquidity Vacuum",
+    "category": "Market Structure",
+    "oneLine": "流動性が消えて価格が飛びやすい状態",
+    "plainJapanese": "Liquidity Vacuumは、流動性が消えて価格が飛びやすい状態を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Liquidity Vacuum is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてLiquidity Vacuumの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Liquidity Vacuum dynamics.",
+        "ja": "フローはLiquidity Vacuumの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Liquidity Vacuum alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてLiquidity Vacuumを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "air-pocket",
+    "term": "Air Pocket",
+    "english": "Air Pocket",
+    "katakana": "Air Pocket",
+    "category": "Market Structure",
+    "oneLine": "注文が薄い真空地帯",
+    "plainJapanese": "Air Pocketは、注文が薄い真空地帯を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Air Pocket is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてAir Pocketの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Air Pocket dynamics.",
+        "ja": "フローはAir Pocketの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Air Pocket alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてAir Pocketを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "order-imbalance",
+    "term": "Order Imbalance",
+    "english": "Order Imbalance",
+    "katakana": "Order Imbalance",
+    "category": "Market Structure",
+    "oneLine": "買い注文と売り注文の偏り",
+    "plainJapanese": "Order Imbalanceは、買い注文と売り注文の偏りを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Order Imbalance is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてOrder Imbalanceの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Order Imbalance dynamics.",
+        "ja": "フローはOrder Imbalanceの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Order Imbalance alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてOrder Imbalanceを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "open-interest",
+    "term": "Open Interest",
+    "english": "Open Interest",
+    "katakana": "OI",
+    "category": "Market Structure",
+    "oneLine": "未決済建玉",
+    "plainJapanese": "Open Interestは、未決済建玉を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Open Interest is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてOpen Interestの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Open Interest dynamics.",
+        "ja": "フローはOpen Interestの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Open Interest alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてOpen Interestを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "max-pain",
+    "term": "Max Pain",
+    "english": "Max Pain",
+    "katakana": "Max Pain",
+    "category": "Market Structure",
+    "oneLine": "オプション買い手の損失が最大になりやすい価格",
+    "plainJapanese": "Max Painは、オプション買い手の損失が最大になりやすい価格を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 2,
+      "bear": 2,
+      "text": "値動きは抑制されやすく、ストライク周辺で平均回帰しやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Max Pain is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてMax Painの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Max Pain dynamics.",
+        "ja": "フローはMax Painの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Max Pain alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてMax Painを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "expiry-magnet",
+    "term": "Expiry Magnet",
+    "english": "Expiry Magnet",
+    "katakana": "Expiry Magnet",
+    "category": "Market Structure",
+    "oneLine": "満期に向けて意識される吸引価格",
+    "plainJapanese": "Expiry Magnetは、満期に向けて意識される吸引価格を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Expiry Magnet is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてExpiry Magnetの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Expiry Magnet dynamics.",
+        "ja": "フローはExpiry Magnetの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Expiry Magnet alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてExpiry Magnetを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "strike-gravity",
+    "term": "Strike Gravity",
+    "english": "Strike Gravity",
+    "katakana": "Strike Gravity",
+    "category": "Market Structure",
+    "oneLine": "大建玉ストライクに価格が引かれる力",
+    "plainJapanese": "Strike Gravityは、大建玉ストライクに価格が引かれる力を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Strike Gravity is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてStrike Gravityの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Strike Gravity dynamics.",
+        "ja": "フローはStrike Gravityの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Strike Gravity alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてStrike Gravityを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "board-depth",
+    "term": "Board Depth",
+    "english": "Board Depth",
+    "katakana": "Board Depth",
+    "category": "Market Structure",
+    "oneLine": "板の厚さ",
+    "plainJapanese": "Board Depthは、板の厚さを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Board Depth is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてBoard Depthの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Board Depth dynamics.",
+        "ja": "フローはBoard Depthの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Board Depth alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてBoard Depthを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "market-depth",
+    "term": "Market Depth",
+    "english": "Market Depth",
+    "katakana": "Market Depth",
+    "category": "Market Structure",
+    "oneLine": "市場の吸収力",
+    "plainJapanese": "Market Depthは、市場の吸収力を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Market Depth is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてMarket Depthの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Market Depth dynamics.",
+        "ja": "フローはMarket Depthの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Market Depth alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてMarket Depthを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "basis-risk",
+    "term": "Basis Risk",
+    "english": "Basis Risk",
+    "katakana": "Basis Risk",
+    "category": "Market Structure",
+    "oneLine": "ヘッジ対象と実際の価格差リスク",
+    "plainJapanese": "Basis Riskは、ヘッジ対象と実際の価格差リスクを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Basis Risk is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてBasis Riskの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Basis Risk dynamics.",
+        "ja": "フローはBasis Riskの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Basis Risk alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてBasis Riskを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "convexity-flow",
+    "term": "Convexity Flow",
+    "english": "Convexity Flow",
+    "katakana": "Convexity Flow",
+    "category": "Market Structure",
+    "oneLine": "凸性に由来するヘッジ売買",
+    "plainJapanese": "Convexity Flowは、凸性に由来するヘッジ売買を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Convexity Flow is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてConvexity Flowの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Convexity Flow dynamics.",
+        "ja": "フローはConvexity Flowの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Convexity Flow alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてConvexity Flowを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "straddle",
+    "term": "Straddle",
+    "english": "Straddle",
+    "katakana": "Straddle",
+    "category": "Options Strategy",
+    "oneLine": "同一ストライクのコールとプットを組み合わせる戦略",
+    "plainJapanese": "Straddleは、同一ストライクのコールとプットを組み合わせる戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Straddle is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてStraddleの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Straddle dynamics.",
+        "ja": "フローはStraddleの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Straddle alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてStraddleを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "strangle",
+    "term": "Strangle",
+    "english": "Strangle",
+    "katakana": "Strangle",
+    "category": "Options Strategy",
+    "oneLine": "異なるストライクのコールとプットを組み合わせる戦略",
+    "plainJapanese": "Strangleは、異なるストライクのコールとプットを組み合わせる戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Strangle is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてStrangleの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Strangle dynamics.",
+        "ja": "フローはStrangleの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Strangle alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてStrangleを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "butterfly",
+    "term": "Butterfly",
+    "english": "Butterfly",
+    "katakana": "Butterfly",
+    "category": "Options Strategy",
+    "oneLine": "中央ストライクに収益を集中させる戦略",
+    "plainJapanese": "Butterflyは、中央ストライクに収益を集中させる戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Butterfly is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてButterflyの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Butterfly dynamics.",
+        "ja": "フローはButterflyの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Butterfly alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてButterflyを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "iron-condor",
+    "term": "Iron Condor",
+    "english": "Iron Condor",
+    "katakana": "Iron Condor",
+    "category": "Options Strategy",
+    "oneLine": "一定レンジ内で利益を狙う戦略",
+    "plainJapanese": "Iron Condorは、一定レンジ内で利益を狙う戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Iron Condor is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてIron Condorの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Iron Condor dynamics.",
+        "ja": "フローはIron Condorの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Iron Condor alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてIron Condorを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "calendar-spread",
+    "term": "Calendar Spread",
+    "english": "Calendar Spread",
+    "katakana": "Calendar",
+    "category": "Options Strategy",
+    "oneLine": "異なる満期を使う戦略",
+    "plainJapanese": "Calendar Spreadは、異なる満期を使う戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Calendar Spread is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCalendar Spreadの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Calendar Spread dynamics.",
+        "ja": "フローはCalendar Spreadの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Calendar Spread alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCalendar Spreadを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "diagonal-spread",
+    "term": "Diagonal Spread",
+    "english": "Diagonal Spread",
+    "katakana": "Diagonal",
+    "category": "Options Strategy",
+    "oneLine": "満期とストライクをずらす戦略",
+    "plainJapanese": "Diagonal Spreadは、満期とストライクをずらす戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Diagonal Spread is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDiagonal Spreadの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Diagonal Spread dynamics.",
+        "ja": "フローはDiagonal Spreadの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Diagonal Spread alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDiagonal Spreadを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "risk-reversal",
+    "term": "Risk Reversal",
+    "english": "Risk Reversal",
+    "katakana": "RR",
+    "category": "Options Strategy",
+    "oneLine": "コールとプットを反対売買して方向性を取る戦略",
+    "plainJapanese": "Risk Reversalは、コールとプットを反対売買して方向性を取る戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Risk Reversal is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRisk Reversalの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Risk Reversal dynamics.",
+        "ja": "フローはRisk Reversalの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Risk Reversal alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRisk Reversalを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "put-spread",
+    "term": "Put Spread",
+    "english": "Put Spread",
+    "katakana": "Put Spread",
+    "category": "Options Strategy",
+    "oneLine": "プット同士で下方向を取る戦略",
+    "plainJapanese": "Put Spreadは、プット同士で下方向を取る戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Put Spread is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPut Spreadの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Put Spread dynamics.",
+        "ja": "フローはPut Spreadの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Put Spread alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPut Spreadを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "call-spread",
+    "term": "Call Spread",
+    "english": "Call Spread",
+    "katakana": "Call Spread",
+    "category": "Options Strategy",
+    "oneLine": "コール同士で上方向を取る戦略",
+    "plainJapanese": "Call Spreadは、コール同士で上方向を取る戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Call Spread is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCall Spreadの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Call Spread dynamics.",
+        "ja": "フローはCall Spreadの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Call Spread alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCall Spreadを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "ratio-spread",
+    "term": "Ratio Spread",
+    "english": "Ratio Spread",
+    "katakana": "Ratio Spread",
+    "category": "Options Strategy",
+    "oneLine": "売買枚数をずらす戦略",
+    "plainJapanese": "Ratio Spreadは、売買枚数をずらす戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Ratio Spread is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRatio Spreadの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Ratio Spread dynamics.",
+        "ja": "フローはRatio Spreadの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Ratio Spread alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRatio Spreadを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "covered-call",
+    "term": "Covered Call",
+    "english": "Covered Call",
+    "katakana": "Covered Call",
+    "category": "Options Strategy",
+    "oneLine": "現物保有にコール売りを重ねる戦略",
+    "plainJapanese": "Covered Callは、現物保有にコール売りを重ねる戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Covered Call is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCovered Callの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Covered Call dynamics.",
+        "ja": "フローはCovered Callの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Covered Call alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCovered Callを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "protective-put",
+    "term": "Protective Put",
+    "english": "Protective Put",
+    "katakana": "Protective Put",
+    "category": "Options Strategy",
+    "oneLine": "現物に保険プットを付ける戦略",
+    "plainJapanese": "Protective Putは、現物に保険プットを付ける戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Protective Put is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてProtective Putの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Protective Put dynamics.",
+        "ja": "フローはProtective Putの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Protective Put alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてProtective Putを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "collar",
+    "term": "Collar",
+    "english": "Collar",
+    "katakana": "Collar",
+    "category": "Options Strategy",
+    "oneLine": "保険プットとコール売りを組み合わせる戦略",
+    "plainJapanese": "Collarは、保険プットとコール売りを組み合わせる戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Collar is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCollarの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Collar dynamics.",
+        "ja": "フローはCollarの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Collar alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCollarを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "dispersion-trade",
+    "term": "Dispersion Trade",
+    "english": "Dispersion Trade",
+    "katakana": "Dispersion",
+    "category": "Options Strategy",
+    "oneLine": "指数ボラと個別株ボラの差を取る戦略",
+    "plainJapanese": "Dispersion Tradeは、指数ボラと個別株ボラの差を取る戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Dispersion Trade is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてDispersion Tradeの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Dispersion Trade dynamics.",
+        "ja": "フローはDispersion Tradeの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Dispersion Trade alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてDispersion Tradeを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "variance-swap",
+    "term": "Variance Swap",
+    "english": "Variance Swap",
+    "katakana": "Variance Swap",
+    "category": "Options Strategy",
+    "oneLine": "分散そのものを取引する戦略",
+    "plainJapanese": "Variance Swapは、分散そのものを取引する戦略を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "顧客フローの反対側に立ち、必要に応じてデルタ・ベガ・ガンマをヘッジする。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Variance Swap is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVariance Swapの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Variance Swap dynamics.",
+        "ja": "フローはVariance Swapの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Variance Swap alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVariance Swapを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "straddle",
+      "strangle",
+      "risk-reversal",
+      "calendar-spread",
+      "vol-skew",
+      "implied-volatility"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "short-covering",
+    "term": "Short Covering",
+    "english": "Short Covering",
+    "katakana": "Short Covering",
+    "category": "Flow",
+    "oneLine": "空売りの買い戻し",
+    "plainJapanese": "Short Coveringは、空売りの買い戻しを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Short Covering is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてShort Coveringの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Short Covering dynamics.",
+        "ja": "フローはShort Coveringの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Short Covering alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてShort Coveringを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "long-liquidation",
+    "term": "Long Liquidation",
+    "english": "Long Liquidation",
+    "katakana": "Long Liquidation",
+    "category": "Flow",
+    "oneLine": "ロング勢の投げ売り",
+    "plainJapanese": "Long Liquidationは、ロング勢の投げ売りを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Long Liquidation is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてLong Liquidationの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Long Liquidation dynamics.",
+        "ja": "フローはLong Liquidationの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Long Liquidation alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてLong Liquidationを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "tail-chase",
+    "term": "Tail Chase",
+    "english": "Tail Chase",
+    "katakana": "Tail Chase",
+    "category": "Flow",
+    "oneLine": "上昇を見て遅れて追随する買い",
+    "plainJapanese": "Tail Chaseは、上昇を見て遅れて追随する買いを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Tail Chase is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてTail Chaseの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Tail Chase dynamics.",
+        "ja": "フローはTail Chaseの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Tail Chase alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてTail Chaseを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "squeeze-fear",
+    "term": "Squeeze Fear",
+    "english": "Squeeze Fear",
+    "katakana": "Squeeze Fear",
+    "category": "Flow",
+    "oneLine": "踏み上げを恐れて買い戻す心理",
+    "plainJapanese": "Squeeze Fearは、踏み上げを恐れて買い戻す心理を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Squeeze Fear is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてSqueeze Fearの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Squeeze Fear dynamics.",
+        "ja": "フローはSqueeze Fearの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Squeeze Fear alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてSqueeze Fearを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "gamma-squeeze",
+    "term": "Gamma Squeeze",
+    "english": "Gamma Squeeze",
+    "katakana": "Gamma Squeeze",
+    "category": "Flow",
+    "oneLine": "ガンマヘッジが上昇を加速させる現象",
+    "plainJapanese": "Gamma Squeezeは、ガンマヘッジが上昇を加速させる現象を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "デルタを中立化するため、価格変化に応じて先物・現物を機械的に売買する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Gamma Squeeze is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてGamma Squeezeの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Gamma Squeeze dynamics.",
+        "ja": "フローはGamma Squeezeの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Gamma Squeeze alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてGamma Squeezeを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "gamma"
+  },
+  {
+    "id": "short-squeeze",
+    "term": "Short Squeeze",
+    "english": "Short Squeeze",
+    "katakana": "Short Squeeze",
+    "category": "Flow",
+    "oneLine": "空売り勢が踏み上げられる現象",
+    "plainJapanese": "Short Squeezeは、空売り勢が踏み上げられる現象を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Short Squeeze is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてShort Squeezeの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Short Squeeze dynamics.",
+        "ja": "フローはShort Squeezeの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Short Squeeze alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてShort Squeezeを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "momentum-ignition",
+    "term": "Momentum Ignition",
+    "english": "Momentum Ignition",
+    "katakana": "Momentum Ignition",
+    "category": "Flow",
+    "oneLine": "モメンタムが点火し一方向に走る局面",
+    "plainJapanese": "Momentum Ignitionは、モメンタムが点火し一方向に走る局面を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Momentum Ignition is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてMomentum Ignitionの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Momentum Ignition dynamics.",
+        "ja": "フローはMomentum Ignitionの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Momentum Ignition alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてMomentum Ignitionを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "flow-driven-market",
+    "term": "Flow Driven Market",
+    "english": "Flow Driven Market",
+    "katakana": "Flow Driven",
+    "category": "Flow",
+    "oneLine": "ファンダメンタルズよりフローが主導する相場",
+    "plainJapanese": "Flow Driven Marketは、ファンダメンタルズよりフローが主導する相場を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Flow Driven Market is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてFlow Driven Marketの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Flow Driven Market dynamics.",
+        "ja": "フローはFlow Driven Marketの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Flow Driven Market alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてFlow Driven Marketを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "cta-buying",
+    "term": "CTA Buying",
+    "english": "CTA Buying",
+    "katakana": "CTA Buying",
+    "category": "Flow",
+    "oneLine": "トレンドフォロー勢の買い",
+    "plainJapanese": "CTA Buyingは、トレンドフォロー勢の買いを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "CTA Buying is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCTA Buyingの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in CTA Buying dynamics.",
+        "ja": "フローはCTA Buyingの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor CTA Buying alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCTA Buyingを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "position-unwind",
+    "term": "Position Unwind",
+    "english": "Position Unwind",
+    "katakana": "Position Unwind",
+    "category": "Flow",
+    "oneLine": "ポジション解消売買",
+    "plainJapanese": "Position Unwindは、ポジション解消売買を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Position Unwind is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPosition Unwindの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Position Unwind dynamics.",
+        "ja": "フローはPosition Unwindの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Position Unwind alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPosition Unwindを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "short-covering",
+      "tail-chase",
+      "squeeze-fear",
+      "momentum-ignition",
+      "negative-gamma"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vix",
+    "term": "VIX",
+    "english": "VIX",
+    "katakana": "VIX",
+    "category": "Indices",
+    "oneLine": "S&P500の30日予想変動率指数",
+    "plainJapanese": "VIXは、S&P500の30日予想変動率指数を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "VIX is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVIXの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in VIX dynamics.",
+        "ja": "フローはVIXの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor VIX alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVIXを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vvix",
+    "term": "VVIX",
+    "english": "VVIX",
+    "katakana": "VVIX",
+    "category": "Indices",
+    "oneLine": "VIX自体の変動率",
+    "plainJapanese": "VVIXは、VIX自体の変動率を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "VVIX is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVVIXの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in VVIX dynamics.",
+        "ja": "フローはVVIXの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor VVIX alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVVIXを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "move-index",
+    "term": "MOVE Index",
+    "english": "MOVE Index",
+    "katakana": "MOVE",
+    "category": "Indices",
+    "oneLine": "米国債市場のボラ指数",
+    "plainJapanese": "MOVE Indexは、米国債市場のボラ指数を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "MOVE Index is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてMOVE Indexの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in MOVE Index dynamics.",
+        "ja": "フローはMOVE Indexの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor MOVE Index alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてMOVE Indexを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "skew-index",
+    "term": "Skew Index",
+    "english": "Skew Index",
+    "katakana": "Skew Index",
+    "category": "Indices",
+    "oneLine": "テールリスクの警戒感を示す指数",
+    "plainJapanese": "Skew Indexは、テールリスクの警戒感を示す指数を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Skew Index is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてSkew Indexの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Skew Index dynamics.",
+        "ja": "フローはSkew Indexの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Skew Index alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてSkew Indexを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "skew"
+  },
+  {
+    "id": "put-call-ratio",
+    "term": "Put/Call Ratio",
+    "english": "Put/Call Ratio",
+    "katakana": "Put/Call",
+    "category": "Indices",
+    "oneLine": "プット出来高とコール出来高の比率",
+    "plainJapanese": "Put/Call Ratioは、プット出来高とコール出来高の比率を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Put/Call Ratio is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてPut/Call Ratioの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Put/Call Ratio dynamics.",
+        "ja": "フローはPut/Call Ratioの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Put/Call Ratio alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてPut/Call Ratioを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "zero-dte",
+    "term": "0DTE",
+    "english": "0DTE",
+    "katakana": "0DTE",
+    "category": "Indices",
+    "oneLine": "当日満期オプション",
+    "plainJapanese": "0DTEは、当日満期オプションを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "0DTE is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けて0DTEの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in 0DTE dynamics.",
+        "ja": "フローは0DTEの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor 0DTE alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせて0DTEを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "opex",
+    "term": "OPEX",
+    "english": "OPEX",
+    "katakana": "OPEX",
+    "category": "Indices",
+    "oneLine": "オプション満期日",
+    "plainJapanese": "OPEXは、オプション満期日を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "OPEX is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてOPEXの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in OPEX dynamics.",
+        "ja": "フローはOPEXの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor OPEX alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてOPEXを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vix-futures",
+    "term": "VIX Futures",
+    "english": "VIX Futures",
+    "katakana": "VIX Futures",
+    "category": "Indices",
+    "oneLine": "VIX先物",
+    "plainJapanese": "VIX Futuresは、VIX先物を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "VIX Futures is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVIX Futuresの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in VIX Futures dynamics.",
+        "ja": "フローはVIX Futuresの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor VIX Futures alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVIX Futuresを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "term-structure",
+    "term": "Term Structure",
+    "english": "Term Structure",
+    "katakana": "Term Structure",
+    "category": "Indices",
+    "oneLine": "満期別の価格構造",
+    "plainJapanese": "Term Structureは、満期別の価格構造を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Term Structure is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてTerm Structureの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Term Structure dynamics.",
+        "ja": "フローはTerm Structureの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Term Structure alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてTerm Structureを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "realized-correlation",
+    "term": "Realized Correlation",
+    "english": "Realized Correlation",
+    "katakana": "Realized Corr",
+    "category": "Indices",
+    "oneLine": "実際に発生した相関",
+    "plainJapanese": "Realized Correlationは、実際に発生した相関を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Realized Correlation is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRealized Correlationの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Realized Correlation dynamics.",
+        "ja": "フローはRealized Correlationの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Realized Correlation alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRealized Correlationを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "event-pass",
+    "term": "Event Pass",
+    "english": "Event Pass",
+    "katakana": "Event Pass",
+    "category": "Macro/Event",
+    "oneLine": "重要イベントが通過した状態",
+    "plainJapanese": "Event Passは、重要イベントが通過した状態を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Event Pass is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてEvent Passの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Event Pass dynamics.",
+        "ja": "フローはEvent Passの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Event Pass alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてEvent Passを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "realized-settle",
+    "term": "Realized Settle",
+    "english": "Realized Settle",
+    "katakana": "Realized Settle",
+    "category": "Macro/Event",
+    "oneLine": "イベント後に実現値で価格が確定すること",
+    "plainJapanese": "Realized Settleは、イベント後に実現値で価格が確定することを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Realized Settle is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRealized Settleの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Realized Settle dynamics.",
+        "ja": "フローはRealized Settleの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Realized Settle alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRealized Settleを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "event-vol",
+    "term": "Event Vol",
+    "english": "Event Vol",
+    "katakana": "Event Vol",
+    "category": "Macro/Event",
+    "oneLine": "イベントに乗ったIV",
+    "plainJapanese": "Event Volは、イベントに乗ったIVを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 3,
+      "text": "IVの上昇はオプション買いに有利、IVの低下はオプション売りに有利になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Event Vol is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてEvent Volの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Event Vol dynamics.",
+        "ja": "フローはEvent Volの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Event Vol alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてEvent Volを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "event-premium",
+    "term": "Event Premium",
+    "english": "Event Premium",
+    "katakana": "Event Premium",
+    "category": "Macro/Event",
+    "oneLine": "イベント前に上乗せされるボラプレミアム",
+    "plainJapanese": "Event Premiumは、イベント前に上乗せされるボラプレミアムを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Event Premium is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてEvent Premiumの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Event Premium dynamics.",
+        "ja": "フローはEvent Premiumの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Event Premium alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてEvent Premiumを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "gap-risk",
+    "term": "Gap Risk",
+    "english": "Gap Risk",
+    "katakana": "Gap Risk",
+    "category": "Macro/Event",
+    "oneLine": "価格が飛ぶリスク",
+    "plainJapanese": "Gap Riskは、価格が飛ぶリスクを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Gap Risk is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてGap Riskの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Gap Risk dynamics.",
+        "ja": "フローはGap Riskの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Gap Risk alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてGap Riskを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "binary-event",
+    "term": "Binary Event",
+    "english": "Binary Event",
+    "katakana": "Binary Event",
+    "category": "Macro/Event",
+    "oneLine": "結果が二択的に出るイベント",
+    "plainJapanese": "Binary Eventは、結果が二択的に出るイベントを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Binary Event is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてBinary Eventの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Binary Event dynamics.",
+        "ja": "フローはBinary Eventの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Binary Event alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてBinary Eventを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "catalyst",
+    "term": "Catalyst",
+    "english": "Catalyst",
+    "katakana": "Catalyst",
+    "category": "Macro/Event",
+    "oneLine": "相場を動かす材料",
+    "plainJapanese": "Catalystは、相場を動かす材料を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Catalyst is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてCatalystの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Catalyst dynamics.",
+        "ja": "フローはCatalystの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Catalyst alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてCatalystを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "vol-expansion",
+    "term": "Vol Expansion",
+    "english": "Vol Expansion",
+    "katakana": "Vol Expansion",
+    "category": "Macro/Event",
+    "oneLine": "ボラが拡大する局面",
+    "plainJapanese": "Vol Expansionは、ボラが拡大する局面を意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 5,
+      "bear": 3,
+      "text": "一方向の値動きが加速しやすい。上方向なら踏み上げ、下方向なら急落になりやすい。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Vol Expansion is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてVol Expansionの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Vol Expansion dynamics.",
+        "ja": "フローはVol Expansionの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Vol Expansion alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてVol Expansionを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "risk-on",
+    "term": "Risk On",
+    "english": "Risk On",
+    "katakana": "Risk On",
+    "category": "Macro/Event",
+    "oneLine": "リスク資産が買われやすい地合い",
+    "plainJapanese": "Risk Onは、リスク資産が買われやすい地合いを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Risk On is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRisk Onの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Risk On dynamics.",
+        "ja": "フローはRisk Onの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Risk On alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRisk Onを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  },
+  {
+    "id": "risk-off",
+    "term": "Risk Off",
+    "english": "Risk Off",
+    "katakana": "Risk Off",
+    "category": "Macro/Event",
+    "oneLine": "安全資産が買われやすい地合い",
+    "plainJapanese": "Risk Offは、安全資産が買われやすい地合いを意味する。実務では単語の定義だけでなく、ディーラーのヘッジ、建玉分布、イベント通過後のIV変化とセットで読む。海外レポートでこの語が出た場合、市場参加者がどの価格帯で売買を強制されやすいか、また相場が平均回帰しやすいのか、トレンド加速しやすいのかを確認する。",
+    "marketImpact": {
+      "bull": 3,
+      "bear": 2,
+      "text": "単独では方向を決めにくいが、建玉・価格位置・イベントと組み合わせると有効。"
+    },
+    "dealerAction": "在庫リスクを抑えるため、先物・現物・別満期オプションでヘッジを調整する。",
+    "traderChecklist": [
+      "現在価格との距離",
+      "建玉の集中",
+      "出来高の急増",
+      "IVとRVの差",
+      "イベント日程",
+      "満期までの日数"
+    ],
+    "reportExamples": [
+      {
+        "source": "Bloomberg style",
+        "text": "Risk Off is becoming increasingly relevant into expiry.",
+        "ja": "満期に向けてRisk Offの重要性が高まっている。"
+      },
+      {
+        "source": "Goldman Sachs style",
+        "text": "Flows suggest a shift in Risk Off dynamics.",
+        "ja": "フローはRisk Offの構造変化を示唆している。"
+      },
+      {
+        "source": "JPMorgan style",
+        "text": "Monitor Risk Off alongside positioning and volatility.",
+        "ja": "ポジションとボラティリティと合わせてRisk Offを確認する必要がある。"
+      }
+    ],
+    "related": [
+      "gamma-exposure",
+      "gamma-flip",
+      "vanna",
+      "charm",
+      "call-wall",
+      "put-wall"
+    ],
+    "chartType": "generic"
+  }
+]
