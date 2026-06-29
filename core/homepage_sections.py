@@ -163,3 +163,28 @@ def render_market_panel(
 
 </div>
 """
+# --------------------------------------------------
+# Modules
+# --------------------------------------------------
+
+def render_modules(modules):
+
+    if not modules:
+        return "<p>No modules.</p>"
+
+    cards = []
+
+    for module in modules:
+
+        cards.append(f"""
+<a class="terminal-module"
+href="{module.get('url', '#')}">
+
+<strong>{module.get('title', '')}</strong>
+
+<p>{module.get('description', '')}</p>
+
+</a>
+""")
+
+    return "\n".join(cards)

@@ -2,22 +2,22 @@
 SUPER CURVE TERMINAL
 Homepage Renderer
 
-Version : v3.0.0-alpha-homepage2
+Version : v3.0.0-alpha-homepage
 """
 
 from __future__ import annotations
 
 from core.renderer import render_page
+
 from core.templates import (
     load_layout,
     load_template,
 )
 
 from core.homepage_sections import (
+    render_modules,
     render_latest_objects,
-    render_graph_summary,
     render_roadmap,
-    render_market_panel,
 )
 
 
@@ -60,8 +60,20 @@ def render_homepage(
     layout = load_layout()
 
     template = load_template(
-
         "homepage.html"
+    )
+
+    hero = homepage.get(
+        "hero",
+        {},
+    )
+
+    modules_html = render_modules(
+
+        homepage.get(
+            "modules",
+            [],
+        )
 
     )
 
@@ -71,74 +83,70 @@ def render_homepage(
 
     )
 
-    graph_html = render_graph_summary(
-
-        graph,
-
-    )
-
     roadmap_html = render_roadmap(
 
         homepage.get(
-
             "roadmap",
-
             [],
-
         )
 
     )
 
-    market_html = render_market_panel(
+    replacements = {
 
-        homepage.get(
+        "title": homepage.get(
+            "title",
+            "",
+        ),
 
-            "market_panel",
+        "subtitle": homepage.get(
+            "subtitle",
+            "",
+        ),
 
-            [],
+        "hero_headline": hero.get(
+            "headline",
+            "",
+        ),
 
-        )
+        "hero_description": hero.get(
+            "description",
+            "",
+        ),
 
-    )
+        "modules": modules_html,
+
+        "latest": latest_html,
+
+        "graph_count": str(
+            len(graph)
+        ),
+
+        "roadmap": roadmap_html,
+
+    }
 
     content = replace_tokens(
 
         template,
 
-        {
-
-            "latest_objects": latest_html,
-
-            "graph_summary": graph_html,
-
-            "roadmap": roadmap_html,
-
-            "market_panel": market_html,
-
-        },
+        replacements,
 
     )
-
     page = render_page(
 
         layout,
 
         homepage.get(
-
             "title",
-
             "SUPER CURVE TERMINAL",
-
         ),
 
         content,
 
         homepage.get(
-
             "subtitle",
-
             "",
-
         ),
 
     )
