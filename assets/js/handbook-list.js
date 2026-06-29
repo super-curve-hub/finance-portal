@@ -1,0 +1,2 @@
+
+async function main(){const idx=await (await fetch('../api/search.json')).json();const list=document.getElementById('list'), q=document.getElementById('q');function draw(){let s=(q.value||'').toLowerCase();let rows=idx.filter(x=>x.type==='concept'&&(`${x.title} ${x.summary} ${x.category} ${x.id}`.toLowerCase().includes(s))).slice(0,120);list.innerHTML=rows.map(x=>`<a class="module-card" href="../glossary/${x.id}.html"><span>${x.category}</span><h3>${x.title}</h3><p>${x.summary}</p></a>`).join('')}q.addEventListener('input',draw);draw()}main();

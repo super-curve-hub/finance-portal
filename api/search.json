@@ -1,267 +1,1721 @@
-{
-  "objects": [
-    {
-      "id": "gamma-flip",
-      "type": "concept",
-      "title": "Gamma Flip",
-      "summary": "市場全体のGEXがプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯。",
-      "tags": [
-        "options",
-        "gex",
-        "dealer-flow",
-        "gamma"
-      ],
-      "related": [
-        "gex",
-        "dealer-long-gamma",
-        "dealer-short-gamma",
-        "vanna",
-        "charm",
-        "zero-dte"
-      ],
-      "url": "glossary/gamma-flip.html"
-    },
-    {
-      "id": "gex",
-      "type": "concept",
-      "title": "Gamma Exposure (GEX)",
-      "summary": "オプション市場全体のGamma量を推定する指標。",
-      "tags": [
-        "options",
-        "gamma",
-        "gex"
-      ],
-      "related": [
-        "gamma-flip",
-        "dealer-long-gamma",
-        "dealer-short-gamma"
-      ],
-      "url": "glossary/gex.html"
-    },
-    {
-      "id": "vanna",
-      "type": "concept",
-      "title": "Vanna",
-      "summary": "IV変化によるDelta変化を表す感応度。",
-      "tags": [
-        "options",
-        "greeks",
-        "vanna"
-      ],
-      "related": [
-        "gamma-flip",
-        "charm",
-        "gex"
-      ],
-      "url": "glossary/vanna.html"
-    },
-    {
-      "id": "charm",
-      "type": "concept",
-      "title": "Charm",
-      "summary": "時間経過によるDelta変化を表す感応度。",
-      "tags": [
-        "options",
-        "greeks",
-        "charm"
-      ],
-      "related": [
-        "vanna",
-        "gamma-flip",
-        "zero-dte"
-      ],
-      "url": "glossary/charm.html"
-    },
-    {
-      "id": "dealer-long-gamma",
-      "type": "concept",
-      "title": "Dealer Long Gamma",
-      "summary": "ディーラーが正Gammaを持つ状態。",
-      "tags": [
-        "options",
-        "dealer-flow"
-      ],
-      "related": [
-        "gex",
-        "gamma-flip",
-        "pinning"
-      ],
-      "url": "glossary/dealer-long-gamma.html"
-    },
-    {
-      "id": "zero-dte",
-      "type": "concept",
-      "title": "0DTE",
-      "summary": "当日満期オプション。",
-      "tags": [
-        "options",
-        "0dte",
-        "intraday"
-      ],
-      "related": [
-        "gamma-flip",
-        "gex",
-        "charm"
-      ],
-      "url": "glossary/zero-dte.html"
-    },
-    {
-      "id": "gex-dashboard",
-      "type": "dashboard",
-      "title": "GEX Dashboard",
-      "summary": "オプション建玉から推定されるディーラーのGamma、Vanna、Charm、0DTEフローを統合するダッシュボード。",
-      "tags": [
-        "dashboard",
-        "options",
-        "gex"
-      ],
-      "related": [
-        "gamma-flip",
-        "gex",
-        "vanna",
-        "charm",
-        "zero-dte"
-      ],
-      "url": "dashboard/gex.html"
-    },
-    {
-      "id": "oil-dashboard",
-      "type": "dashboard",
-      "title": "Oil Regime Dashboard",
-      "summary": "Brent、WTI、Dubai、OSP、Crack、Tanker、Hormuzを統合。",
-      "tags": [
-        "dashboard",
-        "oil",
-        "energy"
-      ],
-      "related": [
-        "oil",
-        "shipping"
-      ],
-      "url": "dashboard/oil.html"
-    },
-    {
-      "id": "usdjpy-dashboard",
-      "type": "dashboard",
-      "title": "USDJPY Intervention Dashboard",
-      "summary": "速度、水準、政治、OIS、FX Optionsから介入警戒度を推定。",
-      "tags": [
-        "dashboard",
-        "usdjpy",
-        "intervention"
-      ],
-      "related": [
-        "fx",
-        "rates"
-      ],
-      "url": "dashboard/usdjpy.html"
-    },
-    {
-      "id": "rates-dashboard",
-      "type": "dashboard",
-      "title": "Rates Dashboard",
-      "summary": "UST、JGB、OIS、MOVE、Yield Curve、DV01を監視。",
-      "tags": [
-        "dashboard",
-        "rates"
-      ],
-      "related": [
-        "rates",
-        "macro"
-      ],
-      "url": "dashboard/rates.html"
-    },
-    {
-      "id": "shipping-dashboard",
-      "type": "dashboard",
-      "title": "Shipping Dashboard",
-      "summary": "BDI、VLCC、Container、Orderbook、Fleet Supplyを統合。",
-      "tags": [
-        "dashboard",
-        "shipping"
-      ],
-      "related": [
-        "shipping",
-        "oil"
-      ],
-      "url": "dashboard/shipping.html"
-    },
-    {
-      "id": "gold-dashboard",
-      "type": "dashboard",
-      "title": "Gold / Silver Dashboard",
-      "summary": "Lease Rate、COMEX、LBMA、EFP、ETF Flowを監視。",
-      "tags": [
-        "dashboard",
-        "metals"
-      ],
-      "related": [
-        "gold",
-        "silver"
-      ],
-      "url": "dashboard/gold.html"
-    },
-    {
-      "id": "gamma-flip-map",
-      "type": "chart",
-      "title": "Gamma Flip Strike Map",
-      "summary": "ストライク別GEXとGamma Flipを示す概念チャート。",
-      "tags": [
-        "chart",
-        "gex",
-        "gamma-flip"
-      ],
-      "related": [
-        "gamma-flip",
-        "gex"
-      ],
-      "url": "dashboard/gex.html"
-    },
-    {
-      "id": "dealer-flow-regime-note",
-      "type": "research",
-      "title": "Dealer Flow Regime Framework",
-      "summary": "GEX、Vanna、Charm、0DTEを統合して短期レジームを判定する設計メモ。",
-      "tags": [
-        "gex",
-        "dealer-flow",
-        "options"
-      ],
-      "related": [
-        "gamma-flip",
-        "gex"
-      ],
-      "url": "notes/"
-    },
-    {
-      "id": "oil-saudi-framework",
-      "type": "research",
-      "title": "WTIを見るな、Saudiを見ろ",
-      "summary": "原油レジームをSaudi政策、OSP、余剰生産能力、Crack、Tankerから見る分析。",
-      "tags": [
-        "oil",
-        "saudi",
-        "energy"
-      ],
-      "related": [
-        "oil-dashboard"
-      ],
-      "url": "notes/"
-    },
-    {
-      "id": "usdjpy-intervention-model",
-      "type": "research",
-      "title": "USDJPY Intervention Model",
-      "summary": "速度×水準×政治×OIS×投機ポジションで介入警戒度を推定するモデル。",
-      "tags": [
-        "fx",
-        "usdjpy",
-        "intervention"
-      ],
-      "related": [
-        "usdjpy-dashboard"
-      ],
-      "url": "notes/"
-    }
-  ]
-}
+[
+  {
+    "id": "implied-volatility",
+    "type": "concept",
+    "title": "Implied Volatility",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/implied-volatility.html"
+  },
+  {
+    "id": "realized-volatility",
+    "type": "concept",
+    "title": "Realized Volatility",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/realized-volatility.html"
+  },
+  {
+    "id": "historical-volatility",
+    "type": "concept",
+    "title": "Historical Volatility",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/historical-volatility.html"
+  },
+  {
+    "id": "forward-volatility",
+    "type": "concept",
+    "title": "Forward Volatility",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/forward-volatility.html"
+  },
+  {
+    "id": "vol-surface",
+    "type": "concept",
+    "title": "Vol Surface",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-surface.html"
+  },
+  {
+    "id": "vol-smile",
+    "type": "concept",
+    "title": "Vol Smile",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-smile.html"
+  },
+  {
+    "id": "vol-skew",
+    "type": "concept",
+    "title": "Vol Skew",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-skew.html"
+  },
+  {
+    "id": "term-structure",
+    "type": "concept",
+    "title": "Term Structure",
+    "category": "Volatility",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/term-structure.html"
+  },
+  {
+    "id": "vol-risk-premium",
+    "type": "concept",
+    "title": "Vol Risk Premium",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-risk-premium.html"
+  },
+  {
+    "id": "vol-crush",
+    "type": "concept",
+    "title": "Vol Crush",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-crush.html"
+  },
+  {
+    "id": "vol-compression",
+    "type": "concept",
+    "title": "Vol Compression",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-compression.html"
+  },
+  {
+    "id": "vol-expansion",
+    "type": "concept",
+    "title": "Vol Expansion",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-expansion.html"
+  },
+  {
+    "id": "vol-of-vol",
+    "type": "concept",
+    "title": "Vol-of-Vol",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/vol-of-vol.html"
+  },
+  {
+    "id": "event-vol",
+    "type": "concept",
+    "title": "Event Vol",
+    "category": "Volatility",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/event-vol.html"
+  },
+  {
+    "id": "variance-swap",
+    "type": "concept",
+    "title": "Variance Swap",
+    "category": "Volatility",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "implied-volatility",
+      "realized-volatility",
+      "vol-risk-premium",
+      "vol-crush",
+      "vix"
+    ],
+    "url": "glossary/variance-swap.html"
+  },
+  {
+    "id": "delta",
+    "type": "concept",
+    "title": "Delta",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/delta.html"
+  },
+  {
+    "id": "gamma",
+    "type": "concept",
+    "title": "Gamma",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/gamma.html"
+  },
+  {
+    "id": "vega",
+    "type": "concept",
+    "title": "Vega",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/vega.html"
+  },
+  {
+    "id": "theta",
+    "type": "concept",
+    "title": "Theta",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/theta.html"
+  },
+  {
+    "id": "rho",
+    "type": "concept",
+    "title": "Rho",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/rho.html"
+  },
+  {
+    "id": "vanna",
+    "type": "concept",
+    "title": "Vanna",
+    "category": "Greeks",
+    "summary": "IVの変化によってデルタが動き、ディーラーのヘッジ売買が発生する感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/vanna.html"
+  },
+  {
+    "id": "charm",
+    "type": "concept",
+    "title": "Charm",
+    "category": "Greeks",
+    "summary": "時間経過だけでデルタが変わり、満期前にヘッジフローが発生する感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/charm.html"
+  },
+  {
+    "id": "vomma",
+    "type": "concept",
+    "title": "Vomma",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/vomma.html"
+  },
+  {
+    "id": "volga",
+    "type": "concept",
+    "title": "Volga",
+    "category": "Greeks",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/volga.html"
+  },
+  {
+    "id": "color",
+    "type": "concept",
+    "title": "Color",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/color.html"
+  },
+  {
+    "id": "speed",
+    "type": "concept",
+    "title": "Speed",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/speed.html"
+  },
+  {
+    "id": "ultima",
+    "type": "concept",
+    "title": "Ultima",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/ultima.html"
+  },
+  {
+    "id": "zomma",
+    "type": "concept",
+    "title": "Zomma",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/zomma.html"
+  },
+  {
+    "id": "delta-hedging",
+    "type": "concept",
+    "title": "Delta Hedging",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/delta-hedging.html"
+  },
+  {
+    "id": "gamma-scalping",
+    "type": "concept",
+    "title": "Gamma Scalping",
+    "category": "Greeks",
+    "summary": "オプション価格が原資産、時間、IV、金利などにどう反応するかを測る感応度。",
+    "related": [
+      "delta",
+      "gamma",
+      "vega",
+      "vanna",
+      "charm",
+      "gex"
+    ],
+    "url": "glossary/gamma-scalping.html"
+  },
+  {
+    "id": "gex",
+    "type": "concept",
+    "title": "Gamma Exposure",
+    "category": "Dealer Flow",
+    "summary": "市場全体でディーラーがどれだけガンマ由来のヘッジ売買を抱えているかを示す指標。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/gex.html"
+  },
+  {
+    "id": "net-gex",
+    "type": "concept",
+    "title": "Net GEX",
+    "category": "Dealer Flow",
+    "summary": "市場全体でディーラーがどれだけガンマ由来のヘッジ売買を抱えているかを示す指標。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/net-gex.html"
+  },
+  {
+    "id": "gamma-flip",
+    "type": "concept",
+    "title": "Gamma Flip",
+    "category": "Dealer Flow",
+    "summary": "ディーラーのヘッジ行動が逆張りから順張り、またはその逆に切り替わる価格帯。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/gamma-flip.html"
+  },
+  {
+    "id": "dealer-long-gamma",
+    "type": "concept",
+    "title": "Dealer Long Gamma",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/dealer-long-gamma.html"
+  },
+  {
+    "id": "dealer-short-gamma",
+    "type": "concept",
+    "title": "Dealer Short Gamma",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/dealer-short-gamma.html"
+  },
+  {
+    "id": "call-wall",
+    "type": "concept",
+    "title": "Call Wall",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/call-wall.html"
+  },
+  {
+    "id": "put-wall",
+    "type": "concept",
+    "title": "Put Wall",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/put-wall.html"
+  },
+  {
+    "id": "gamma-wall",
+    "type": "concept",
+    "title": "Gamma Wall",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gex",
+      "net-gex",
+      "gamma-flip",
+      "dealer-long-gamma",
+      "dealer-short-gamma",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "glossary/gamma-wall.html"
+  },
+  {
+    "id": "dealer-hedging",
+    "type": "concept",
+    "title": "Dealer Hedging",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/dealer-hedging.html"
+  },
+  {
+    "id": "dealer-rebalancing",
+    "type": "concept",
+    "title": "Dealer Rebalancing",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/dealer-rebalancing.html"
+  },
+  {
+    "id": "dealer-unwind",
+    "type": "concept",
+    "title": "Dealer Unwind",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/dealer-unwind.html"
+  },
+  {
+    "id": "vanna-flow",
+    "type": "concept",
+    "title": "Vanna Flow",
+    "category": "Dealer Flow",
+    "summary": "IVの変化によってデルタが動き、ディーラーのヘッジ売買が発生する感応度。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/vanna-flow.html"
+  },
+  {
+    "id": "charm-flow",
+    "type": "concept",
+    "title": "Charm Flow",
+    "category": "Dealer Flow",
+    "summary": "時間経過だけでデルタが変わり、満期前にヘッジフローが発生する感応度。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/charm-flow.html"
+  },
+  {
+    "id": "convexity-flow",
+    "type": "concept",
+    "title": "Convexity Flow",
+    "category": "Dealer Flow",
+    "summary": "オプションを売買したディーラーがデルタを中立化するために行う先物・現物売買。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/convexity-flow.html"
+  },
+  {
+    "id": "0dte-flow",
+    "type": "concept",
+    "title": "0DTE Flow",
+    "category": "Dealer Flow",
+    "summary": "当日満期オプション。短時間でガンマとヘッジ売買が集中し、日中の値動きを増幅しやすい。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/0dte-flow.html"
+  },
+  {
+    "id": "pinning",
+    "type": "concept",
+    "title": "Pinning",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/pinning.html"
+  },
+  {
+    "id": "pin-risk",
+    "type": "concept",
+    "title": "Pin Risk",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/pin-risk.html"
+  },
+  {
+    "id": "sticky-strike",
+    "type": "concept",
+    "title": "Sticky Strike",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/sticky-strike.html"
+  },
+  {
+    "id": "sticky-delta",
+    "type": "concept",
+    "title": "Sticky Delta",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/sticky-delta.html"
+  },
+  {
+    "id": "liquidity-vacuum",
+    "type": "concept",
+    "title": "Liquidity Vacuum",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/liquidity-vacuum.html"
+  },
+  {
+    "id": "air-pocket",
+    "type": "concept",
+    "title": "Air Pocket",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/air-pocket.html"
+  },
+  {
+    "id": "order-imbalance",
+    "type": "concept",
+    "title": "Order Imbalance",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/order-imbalance.html"
+  },
+  {
+    "id": "open-interest",
+    "type": "concept",
+    "title": "Open Interest",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/open-interest.html"
+  },
+  {
+    "id": "max-pain",
+    "type": "concept",
+    "title": "Max Pain",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/max-pain.html"
+  },
+  {
+    "id": "skew-steepening",
+    "type": "concept",
+    "title": "Skew Steepening",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/skew-steepening.html"
+  },
+  {
+    "id": "skew-flattening",
+    "type": "concept",
+    "title": "Skew Flattening",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/skew-flattening.html"
+  },
+  {
+    "id": "term-structure-inversion",
+    "type": "concept",
+    "title": "Term Structure Inversion",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/term-structure-inversion.html"
+  },
+  {
+    "id": "contango",
+    "type": "concept",
+    "title": "Contango",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/contango.html"
+  },
+  {
+    "id": "backwardation",
+    "type": "concept",
+    "title": "Backwardation",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/backwardation.html"
+  },
+  {
+    "id": "dealer-inventory",
+    "type": "concept",
+    "title": "Dealer Inventory",
+    "category": "Market Structure",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/dealer-inventory.html"
+  },
+  {
+    "id": "covered-call",
+    "type": "concept",
+    "title": "Covered Call",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/covered-call.html"
+  },
+  {
+    "id": "protective-put",
+    "type": "concept",
+    "title": "Protective Put",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/protective-put.html"
+  },
+  {
+    "id": "collar",
+    "type": "concept",
+    "title": "Collar",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/collar.html"
+  },
+  {
+    "id": "straddle",
+    "type": "concept",
+    "title": "Straddle",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/straddle.html"
+  },
+  {
+    "id": "strangle",
+    "type": "concept",
+    "title": "Strangle",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/strangle.html"
+  },
+  {
+    "id": "butterfly",
+    "type": "concept",
+    "title": "Butterfly",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/butterfly.html"
+  },
+  {
+    "id": "iron-condor",
+    "type": "concept",
+    "title": "Iron Condor",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/iron-condor.html"
+  },
+  {
+    "id": "calendar-spread",
+    "type": "concept",
+    "title": "Calendar Spread",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/calendar-spread.html"
+  },
+  {
+    "id": "diagonal-spread",
+    "type": "concept",
+    "title": "Diagonal Spread",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/diagonal-spread.html"
+  },
+  {
+    "id": "ratio-spread",
+    "type": "concept",
+    "title": "Ratio Spread",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/ratio-spread.html"
+  },
+  {
+    "id": "risk-reversal",
+    "type": "concept",
+    "title": "Risk Reversal",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/risk-reversal.html"
+  },
+  {
+    "id": "put-spread",
+    "type": "concept",
+    "title": "Put Spread",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/put-spread.html"
+  },
+  {
+    "id": "call-spread",
+    "type": "concept",
+    "title": "Call Spread",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/call-spread.html"
+  },
+  {
+    "id": "dispersion-trade",
+    "type": "concept",
+    "title": "Dispersion Trade",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/dispersion-trade.html"
+  },
+  {
+    "id": "variance-trade",
+    "type": "concept",
+    "title": "Variance Trade",
+    "category": "Options Strategy",
+    "summary": "複数のオプションを組み合わせ、方向・ボラ・時間価値を取引する戦略。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/variance-trade.html"
+  },
+  {
+    "id": "short-covering",
+    "type": "concept",
+    "title": "Short Covering",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/short-covering.html"
+  },
+  {
+    "id": "long-liquidation",
+    "type": "concept",
+    "title": "Long Liquidation",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/long-liquidation.html"
+  },
+  {
+    "id": "momentum-ignition",
+    "type": "concept",
+    "title": "Momentum Ignition",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/momentum-ignition.html"
+  },
+  {
+    "id": "tail-chase",
+    "type": "concept",
+    "title": "Tail Chase",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/tail-chase.html"
+  },
+  {
+    "id": "squeeze-fear",
+    "type": "concept",
+    "title": "Squeeze Fear",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/squeeze-fear.html"
+  },
+  {
+    "id": "gamma-squeeze",
+    "type": "concept",
+    "title": "Gamma Squeeze",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/gamma-squeeze.html"
+  },
+  {
+    "id": "short-squeeze",
+    "type": "concept",
+    "title": "Short Squeeze",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/short-squeeze.html"
+  },
+  {
+    "id": "position-unwind",
+    "type": "concept",
+    "title": "Position Unwind",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/position-unwind.html"
+  },
+  {
+    "id": "flow-driven-market",
+    "type": "concept",
+    "title": "Flow Driven Market",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/flow-driven-market.html"
+  },
+  {
+    "id": "cta-buying",
+    "type": "concept",
+    "title": "CTA Buying",
+    "category": "Flow",
+    "summary": "投資家やCTA、ショート勢などのポジション変化によって発生する需給フロー。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/cta-buying.html"
+  },
+  {
+    "id": "vix",
+    "type": "concept",
+    "title": "VIX",
+    "category": "Indices",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/vix.html"
+  },
+  {
+    "id": "vvix",
+    "type": "concept",
+    "title": "VVIX",
+    "category": "Indices",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/vvix.html"
+  },
+  {
+    "id": "move-index",
+    "type": "concept",
+    "title": "MOVE Index",
+    "category": "Indices",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/move-index.html"
+  },
+  {
+    "id": "skew-index",
+    "type": "concept",
+    "title": "Skew Index",
+    "category": "Indices",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/skew-index.html"
+  },
+  {
+    "id": "put-call-ratio",
+    "type": "concept",
+    "title": "Put Call Ratio",
+    "category": "Indices",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/put-call-ratio.html"
+  },
+  {
+    "id": "zero-dte",
+    "type": "concept",
+    "title": "0DTE",
+    "category": "Indices",
+    "summary": "当日満期オプション。短時間でガンマとヘッジ売買が集中し、日中の値動きを増幅しやすい。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/zero-dte.html"
+  },
+  {
+    "id": "opex",
+    "type": "concept",
+    "title": "OPEX",
+    "category": "Indices",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/opex.html"
+  },
+  {
+    "id": "vix-futures",
+    "type": "concept",
+    "title": "VIX Futures",
+    "category": "Indices",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/vix-futures.html"
+  },
+  {
+    "id": "vix-term-structure",
+    "type": "concept",
+    "title": "VIX Term Structure",
+    "category": "Indices",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/vix-term-structure.html"
+  },
+  {
+    "id": "vvix-spike",
+    "type": "concept",
+    "title": "VVIX Spike",
+    "category": "Indices",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/vvix-spike.html"
+  },
+  {
+    "id": "event-pass",
+    "type": "concept",
+    "title": "Event Pass",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/event-pass.html"
+  },
+  {
+    "id": "realized-settle",
+    "type": "concept",
+    "title": "Realized Settle",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/realized-settle.html"
+  },
+  {
+    "id": "gap-risk",
+    "type": "concept",
+    "title": "Gap Risk",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/gap-risk.html"
+  },
+  {
+    "id": "binary-event",
+    "type": "concept",
+    "title": "Binary Event",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/binary-event.html"
+  },
+  {
+    "id": "catalyst",
+    "type": "concept",
+    "title": "Catalyst",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/catalyst.html"
+  },
+  {
+    "id": "fomc-trade",
+    "type": "concept",
+    "title": "FOMC Trade",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/fomc-trade.html"
+  },
+  {
+    "id": "cpi-trade",
+    "type": "concept",
+    "title": "CPI Trade",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/cpi-trade.html"
+  },
+  {
+    "id": "earnings-vol",
+    "type": "concept",
+    "title": "Earnings Vol",
+    "category": "Macro Event",
+    "summary": "市場が織り込む価格変動リスクを読むためのボラティリティ関連指標。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/earnings-vol.html"
+  },
+  {
+    "id": "normalization",
+    "type": "concept",
+    "title": "Normalization",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/normalization.html"
+  },
+  {
+    "id": "risk-off",
+    "type": "concept",
+    "title": "Risk Off",
+    "category": "Macro Event",
+    "summary": "市場構造、ボラティリティ、オプション需給を読むための実務用語。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "vix"
+    ],
+    "url": "glossary/risk-off.html"
+  },
+  {
+    "id": "gex-dashboard",
+    "type": "dashboard",
+    "title": "GEX Dashboard",
+    "category": "Dashboard",
+    "summary": "オプション建玉からDealer Gamma、Gamma Flip、Call Wall、Put Wall、Vanna、Charmを推定する。",
+    "related": [
+      "gamma-flip",
+      "gex",
+      "vanna",
+      "charm",
+      "zero-dte"
+    ],
+    "url": "dashboard/gex.html"
+  },
+  {
+    "id": "oil-dashboard",
+    "type": "dashboard",
+    "title": "Oil Regime Dashboard",
+    "category": "Dashboard",
+    "summary": "Brent、WTI、Dubai、OSP、Crack、Tanker、Inventoryから原油レジームを判定する。",
+    "related": [
+      "event-pass",
+      "risk-off",
+      "term-structure"
+    ],
+    "url": "dashboard/oil.html"
+  },
+  {
+    "id": "usdjpy-dashboard",
+    "type": "dashboard",
+    "title": "USDJPY Intervention Dashboard",
+    "category": "Dashboard",
+    "summary": "水準・速度・金利差・OIS・オプション・政治要因から介入警戒度を推定する。",
+    "related": [
+      "gap-risk",
+      "binary-event",
+      "catalyst"
+    ],
+    "url": "dashboard/usdjpy.html"
+  },
+  {
+    "id": "rates-dashboard",
+    "type": "dashboard",
+    "title": "Rates Dashboard",
+    "category": "Dashboard",
+    "summary": "UST、JGB、OIS、MOVE、スロープ、曲率、DV01を統合して金利レジームを読む。",
+    "related": [
+      "move-index",
+      "vol-risk-premium"
+    ],
+    "url": "dashboard/rates.html"
+  },
+  {
+    "id": "shipping-dashboard",
+    "type": "dashboard",
+    "title": "Shipping Dashboard",
+    "category": "Dashboard",
+    "summary": "BDI、VLCC、コンテナ、船腹需給、造船供給、中国輸入から海運サイクルを読む。",
+    "related": [
+      "backwardation",
+      "contango",
+      "catalyst"
+    ],
+    "url": "dashboard/shipping.html"
+  },
+  {
+    "id": "gold-dashboard",
+    "type": "dashboard",
+    "title": "Gold / Silver Dashboard",
+    "category": "Dashboard",
+    "summary": "Gold、Silver、Lease Rate、COMEX在庫、LBMA、EFP、ETFフローから貴金属ストレスを判定する。",
+    "related": [
+      "vol-expansion",
+      "risk-off",
+      "skew-index"
+    ],
+    "url": "dashboard/gold.html"
+  },
+  {
+    "id": "macro-library",
+    "type": "research",
+    "title": "Macro Library",
+    "category": "Research",
+    "summary": "マクロ、オプション、原油、金利、為替、海運、貴金属のリサーチ保管庫。",
+    "related": [
+      "gamma-flip",
+      "oil-dashboard",
+      "rates-dashboard"
+    ],
+    "url": "notes/index.html"
+  },
+  {
+    "id": "dealer-flow-regime-note",
+    "type": "research",
+    "title": "Dealer Flow Regime Note",
+    "category": "Research",
+    "summary": "GEX、Vanna、Charm、OPEX前後のレジーム変化を整理するリサーチノート。",
+    "related": [
+      "gex",
+      "vanna",
+      "charm"
+    ],
+    "url": "content/notes/dealer-flow-regime-note.md"
+  }
+]
