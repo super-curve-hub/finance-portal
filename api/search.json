@@ -1,0 +1,505 @@
+{
+  "version": "1.0",
+  "items": [
+    {
+      "id": "iv",
+      "term": "Implied Volatility",
+      "category": "Volatility"
+    },
+    {
+      "id": "rv",
+      "term": "Realized Volatility",
+      "category": "Volatility"
+    },
+    {
+      "id": "hv",
+      "term": "Historical Volatility",
+      "category": "Volatility"
+    },
+    {
+      "id": "vrp",
+      "term": "Vol Risk Premium",
+      "category": "Volatility"
+    },
+    {
+      "id": "vol-crush",
+      "term": "Vol Crush",
+      "category": "Volatility"
+    },
+    {
+      "id": "normalization",
+      "term": "Normalization",
+      "category": "Volatility"
+    },
+    {
+      "id": "vol-surface",
+      "term": "Vol Surface",
+      "category": "Volatility"
+    },
+    {
+      "id": "vol-skew",
+      "term": "Vol Skew",
+      "category": "Volatility"
+    },
+    {
+      "id": "term-structure",
+      "term": "Term Structure",
+      "category": "Volatility"
+    },
+    {
+      "id": "forward-vol",
+      "term": "Forward Volatility",
+      "category": "Volatility"
+    },
+    {
+      "id": "delta",
+      "term": "Delta",
+      "category": "Greeks"
+    },
+    {
+      "id": "gamma",
+      "term": "Gamma",
+      "category": "Greeks"
+    },
+    {
+      "id": "vega",
+      "term": "Vega",
+      "category": "Greeks"
+    },
+    {
+      "id": "theta",
+      "term": "Theta",
+      "category": "Greeks"
+    },
+    {
+      "id": "rho",
+      "term": "Rho",
+      "category": "Greeks"
+    },
+    {
+      "id": "vanna",
+      "term": "Vanna",
+      "category": "Greeks"
+    },
+    {
+      "id": "charm",
+      "term": "Charm",
+      "category": "Greeks"
+    },
+    {
+      "id": "vomma",
+      "term": "Vomma",
+      "category": "Greeks"
+    },
+    {
+      "id": "color",
+      "term": "Color",
+      "category": "Greeks"
+    },
+    {
+      "id": "speed",
+      "term": "Speed",
+      "category": "Greeks"
+    },
+    {
+      "id": "ultima",
+      "term": "Ultima",
+      "category": "Greeks"
+    },
+    {
+      "id": "zomma",
+      "term": "Zomma",
+      "category": "Greeks"
+    },
+    {
+      "id": "dual-delta",
+      "term": "Dual Delta",
+      "category": "Greeks"
+    },
+    {
+      "id": "dual-gamma",
+      "term": "Dual Gamma",
+      "category": "Greeks"
+    },
+    {
+      "id": "elasticity",
+      "term": "Elasticity",
+      "category": "Greeks"
+    },
+    {
+      "id": "gex",
+      "term": "Gamma Exposure",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "net-gex",
+      "term": "Net GEX",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "gamma-flip",
+      "term": "Gamma Flip",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "dealer-long-gamma",
+      "term": "Dealer Long Gamma",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "dealer-short-gamma",
+      "term": "Dealer Short Gamma",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "call-wall",
+      "term": "Call Wall",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "put-wall",
+      "term": "Put Wall",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "gamma-wall",
+      "term": "Gamma Wall",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "vanna-flow",
+      "term": "Vanna Flow",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "charm-flow",
+      "term": "Charm Flow",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "dealer-hedging",
+      "term": "Dealer Hedging",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "dealer-rebalancing",
+      "term": "Dealer Rebalancing",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "dealer-unwind",
+      "term": "Dealer Unwind",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "zero-dte-flow",
+      "term": "0DTE Flow",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "opex-flow",
+      "term": "OPEX Flow",
+      "category": "Dealer Flow"
+    },
+    {
+      "id": "pinning",
+      "term": "Pinning",
+      "category": "Market Structure"
+    },
+    {
+      "id": "pin-risk",
+      "term": "Pin Risk",
+      "category": "Market Structure"
+    },
+    {
+      "id": "sticky-strike",
+      "term": "Sticky Strike",
+      "category": "Market Structure"
+    },
+    {
+      "id": "sticky-delta",
+      "term": "Sticky Delta",
+      "category": "Market Structure"
+    },
+    {
+      "id": "liquidity-vacuum",
+      "term": "Liquidity Vacuum",
+      "category": "Market Structure"
+    },
+    {
+      "id": "air-pocket",
+      "term": "Air Pocket",
+      "category": "Market Structure"
+    },
+    {
+      "id": "order-imbalance",
+      "term": "Order Imbalance",
+      "category": "Market Structure"
+    },
+    {
+      "id": "dealer-inventory",
+      "term": "Dealer Inventory",
+      "category": "Market Structure"
+    },
+    {
+      "id": "convexity",
+      "term": "Convexity",
+      "category": "Market Structure"
+    },
+    {
+      "id": "convexity-flow",
+      "term": "Convexity Flow",
+      "category": "Market Structure"
+    },
+    {
+      "id": "max-pain",
+      "term": "Max Pain",
+      "category": "Market Structure"
+    },
+    {
+      "id": "strike-gravity",
+      "term": "Strike Gravity",
+      "category": "Market Structure"
+    },
+    {
+      "id": "moneyness",
+      "term": "Moneyness",
+      "category": "Market Structure"
+    },
+    {
+      "id": "atm",
+      "term": "At The Money",
+      "category": "Market Structure"
+    },
+    {
+      "id": "otm",
+      "term": "Out Of The Money",
+      "category": "Market Structure"
+    },
+    {
+      "id": "covered-call",
+      "term": "Covered Call",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "protective-put",
+      "term": "Protective Put",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "collar",
+      "term": "Collar",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "straddle",
+      "term": "Straddle",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "strangle",
+      "term": "Strangle",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "butterfly",
+      "term": "Butterfly",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "iron-condor",
+      "term": "Iron Condor",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "calendar-spread",
+      "term": "Calendar Spread",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "diagonal-spread",
+      "term": "Diagonal Spread",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "ratio-spread",
+      "term": "Ratio Spread",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "risk-reversal",
+      "term": "Risk Reversal",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "put-spread",
+      "term": "Put Spread",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "call-spread",
+      "term": "Call Spread",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "dispersion",
+      "term": "Dispersion",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "variance-swap",
+      "term": "Variance Swap",
+      "category": "Options Strategy"
+    },
+    {
+      "id": "short-covering",
+      "term": "Short Covering",
+      "category": "Flow"
+    },
+    {
+      "id": "long-liquidation",
+      "term": "Long Liquidation",
+      "category": "Flow"
+    },
+    {
+      "id": "momentum-ignition",
+      "term": "Momentum Ignition",
+      "category": "Flow"
+    },
+    {
+      "id": "tail-chase",
+      "term": "Tail Chase",
+      "category": "Flow"
+    },
+    {
+      "id": "squeeze-fear",
+      "term": "Squeeze Fear",
+      "category": "Flow"
+    },
+    {
+      "id": "gamma-squeeze",
+      "term": "Gamma Squeeze",
+      "category": "Flow"
+    },
+    {
+      "id": "short-squeeze",
+      "term": "Short Squeeze",
+      "category": "Flow"
+    },
+    {
+      "id": "position-unwind",
+      "term": "Position Unwind",
+      "category": "Flow"
+    },
+    {
+      "id": "flow-driven-market",
+      "term": "Flow Driven Market",
+      "category": "Flow"
+    },
+    {
+      "id": "cta-buying",
+      "term": "CTA Buying",
+      "category": "Flow"
+    },
+    {
+      "id": "vix",
+      "term": "VIX",
+      "category": "Indices"
+    },
+    {
+      "id": "vvix",
+      "term": "VVIX",
+      "category": "Indices"
+    },
+    {
+      "id": "move",
+      "term": "MOVE Index",
+      "category": "Indices"
+    },
+    {
+      "id": "skew-index",
+      "term": "Skew Index",
+      "category": "Indices"
+    },
+    {
+      "id": "put-call-ratio",
+      "term": "Put/Call Ratio",
+      "category": "Indices"
+    },
+    {
+      "id": "open-interest",
+      "term": "Open Interest",
+      "category": "Indices"
+    },
+    {
+      "id": "volume",
+      "term": "Volume",
+      "category": "Indices"
+    },
+    {
+      "id": "zero-dte",
+      "term": "0DTE",
+      "category": "Indices"
+    },
+    {
+      "id": "opex",
+      "term": "OPEX",
+      "category": "Indices"
+    },
+    {
+      "id": "skew",
+      "term": "Skew",
+      "category": "Indices"
+    },
+    {
+      "id": "event-pass",
+      "term": "Event Pass",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "realized-settle",
+      "term": "Realized Settle",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "event-vol",
+      "term": "Event Vol",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "earnings-vol",
+      "term": "Earnings Vol",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "cpi-trade",
+      "term": "CPI Trade",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "fomc-trade",
+      "term": "FOMC Trade",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "event-premium",
+      "term": "Event Premium",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "gap-risk",
+      "term": "Gap Risk",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "binary-event",
+      "term": "Binary Event",
+      "category": "Macro/Event"
+    },
+    {
+      "id": "catalyst",
+      "term": "Catalyst",
+      "category": "Macro/Event"
+    }
+  ]
+}

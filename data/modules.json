@@ -1,12 +1,62 @@
 [
-  {"id":"option-handbook","title":"Option Handbook","icon":"📖","description":"オプション・ボラティリティ実務辞典。GEX、Vanna、Charm、Skew、0DTEを体系化。","status":"active"},
-  {"id":"gex-dashboard","title":"GEX Dashboard","icon":"📊","description":"指数・個別株のGamma Exposure、Call Wall、Put Wall、Gamma Flipを監視。","status":"planned"},
-  {"id":"oil-regime","title":"Oil Regime","icon":"📈","description":"Brent、WTI、クラック、在庫、OPEC+、Saudi政策を統合。","status":"planned"},
-  {"id":"usdjpy-intervention","title":"USDJPY Intervention","icon":"💴","description":"水準・速度・政治・CFTC・金利差から介入警戒度を推定。","status":"planned"},
-  {"id":"rates-dashboard","title":"Rates Dashboard","icon":"🏦","description":"OIS、JGB、UST、カーブ、期間プレミアム、曲率を監視。","status":"planned"},
-  {"id":"shipping-dashboard","title":"Shipping Dashboard","icon":"🚢","description":"BDI、コンテナ運賃、燃料費、中国輸入、船腹需給を統合。","status":"planned"},
-  {"id":"gold-silver","title":"Gold/Silver","icon":"🪙","description":"Lease Rate、COMEX在庫、EFP、中央銀行需要を監視。","status":"planned"},
-  {"id":"energy","title":"Energy","icon":"🛢","description":"原油、ナフサ、LNG、タンカー、ホルムズ海峡リスクを統合。","status":"planned"},
-  {"id":"macro-library","title":"Macro Library","icon":"📚","description":"一次情報、マクロ論点、制度、リサーチメモの保管庫。","status":"planned"},
-  {"id":"notes","title":"Notes","icon":"📝","description":"自分の解説、note記事、X投稿原稿を整理。","status":"planned"}
+  {
+    "icon": "📖",
+    "title": "Option Handbook",
+    "description": "オプション・ボラティリティ実務辞典。GEX、Vanna、Charm、Skew、0DTEを整理。",
+    "href": "#terms"
+  },
+  {
+    "icon": "📊",
+    "title": "GEX Dashboard",
+    "description": "Gamma Exposure、Call Wall、Put Wall、Gamma Flipを監視。",
+    "href": "dashboard/gex.html"
+  },
+  {
+    "icon": "📈",
+    "title": "Oil Regime",
+    "description": "原油、クラック、在庫、OSP、ホルムズリスクを統合。",
+    "href": "dashboard/oil.html"
+  },
+  {
+    "icon": "💴",
+    "title": "USDJPY Intervention",
+    "description": "速度、水準、政治イベント、投機筋ポジションから介入警戒を判定。",
+    "href": "dashboard/usdjpy.html"
+  },
+  {
+    "icon": "🏦",
+    "title": "Rates Dashboard",
+    "description": "OIS、JGB、UST、スロープ、曲率、実質金利を監視。",
+    "href": "dashboard/rates.html"
+  },
+  {
+    "icon": "🚢",
+    "title": "Shipping Dashboard",
+    "description": "BDI、コンテナ運賃、バンカー燃料、船腹需給を確認。",
+    "href": "dashboard/shipping.html"
+  },
+  {
+    "icon": "🪙",
+    "title": "Gold / Silver",
+    "description": "Lease Rate、COMEX在庫、EFP、実質金利を統合。",
+    "href": "dashboard/gold.html"
+  },
+  {
+    "icon": "📚",
+    "title": "Macro Library",
+    "description": "マクロ・市場構造・イベント分析の知識ベース。",
+    "href": "notes/index.html"
+  },
+  {
+    "icon": "📝",
+    "title": "Research Notes",
+    "description": "自分の相場メモ、note下書き、検証結果を蓄積。",
+    "href": "notes/index.html"
+  },
+  {
+    "icon": "🤖",
+    "title": "AI Search",
+    "description": "将来のRAG検索・自然言語検索用インターフェース。",
+    "href": "api/search.json"
+  }
 ]
