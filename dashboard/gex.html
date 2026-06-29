@@ -1,1 +1,83 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GEX Dashboard</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><main class="shell section"><a class="chip" href="../index.html">← Top</a><h1>GEX Dashboard</h1><article class="card"><p class="muted">このページはダッシュボード拡張用のプレースホルダーです。JSON、チャート、外部データ取得を後から追加できます。</p></article></main></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GEX Dashboard | Super Curve Finance Portal</title>
+  <meta name="description" content="GEX、Vanna、Charm、Gamma Flip、Call Wall、Put Wallを統合して市場レジームを読むダッシュボード。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="topbar"><div class="shell nav"><a class="brand" href="../index.html">SUPER CURVE</a><button id="themeToggle">Dark</button></div></header>
+  <main class="shell section gex-page">
+    <a class="chip" href="../index.html">← Top</a>
+    <p class="eyebrow">DEALER FLOW / OPTIONS MICROSTRUCTURE</p>
+    <h1>📊 GEX Dashboard</h1>
+    <p class="muted">Gamma Exposure、Vanna、Charm、0DTE、Call Wall、Put Wallを統合して、ディーラー・ヘッジフロー由来の相場レジームを判定します。</p>
+
+    <section class="grid gex-hero">
+      <article class="card">
+        <span class="muted">Spot</span>
+        <h2 id="spot">--</h2>
+        <p class="muted" id="asOf">--</p>
+      </article>
+      <article class="card wide">
+        <span class="muted">Regime</span>
+        <h2 id="regimeLabel">--</h2>
+        <p id="regimeSummary"></p>
+        <div class="score"><i id="regimeScore"></i></div><b id="regimeScoreText"></b>
+      </article>
+    </section>
+
+    <section class="section"><h2>主要価格帯</h2><div class="levels" id="levels"></div></section>
+    <section class="section"><h2>主要メトリクス</h2><div class="grid" id="metrics"></div></section>
+
+    <section class="grid section">
+      <article class="card chartCard" id="gexByStrike"></article>
+      <article class="card chartCard" id="vannaByStrike"></article>
+    </section>
+
+    <section class="grid section">
+      <article class="card">
+        <h2>Bull Trigger</h2>
+        <ul id="bullList"></ul>
+      </article>
+      <article class="card">
+        <h2>Bear Trigger</h2>
+        <ul id="bearList"></ul>
+      </article>
+    </section>
+
+    <section class="section card">
+      <h2>満期別GEX / IV</h2>
+      <div class="termChart" id="termStructure"></div>
+    </section>
+
+    <section class="section card">
+      <h2>シナリオ判定</h2>
+      <div class="scenarioGrid">
+        <label>Spot<br><input id="scenarioSpot" type="number" step="50"></label>
+        <label>IV Shock（vol pt）<br><input id="ivShock" type="number" step="0.5" value="-1"></label>
+      </div>
+      <div class="scenarioResult" id="scenarioResult"></div>
+    </section>
+
+    <section class="section card tableWrap">
+      <h2>Strike Detail</h2>
+      <table id="strikeTable"><thead><tr><th>Strike</th><th>GEX</th><th>Vanna</th><th>Charm</th><th>Call OI</th><th>Put OI</th></tr></thead><tbody></tbody></table>
+    </section>
+
+    <section class="section card">
+      <h2>トレーダー用チェックリスト</h2>
+      <ul id="checklist"></ul>
+    </section>
+
+    <section class="section card">
+      <h2>データ差し替え方法</h2>
+      <p class="muted"><code>data/gex-dashboard.json</code> の <code>spot</code>、<code>levels</code>、<code>strikes</code>、<code>term</code> を自前のオプションチェーン計算結果に差し替えるだけで更新できます。</p>
+    </section>
+  </main>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/gex-dashboard.js"></script>
+</body>
+</html>
