@@ -1,0 +1,21 @@
+{
+  "id": "rates-dashboard",
+  "type": "dashboard",
+  "title": "Rates Dashboard",
+  "summary": "UST、JGB、OIS、MOVE、スロープ、曲率、DV01を統合して金利レジームを読む。",
+  "metrics": [
+    "ust2y",
+    "ust10y",
+    "jgb10y",
+    "move",
+    "curve_slope",
+    "curve_butterfly"
+  ],
+  "related": [
+    "move-index",
+    "vol-risk-premium"
+  ],
+  "dataSource": "data/market/rates.json",
+  "updateMode": "static-json / future-api-ready",
+  "interpretation": "JSONデータを更新すると画面表示と検索結果が自動で変わる設計。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "shipping-dashboard",
+  "type": "dashboard",
+  "title": "Shipping Dashboard",
+  "summary": "BDI、VLCC、コンテナ、船腹需給、造船供給、中国輸入から海運サイクルを読む。",
+  "metrics": [
+    "bdi",
+    "vlcc",
+    "container_rate",
+    "orderbook_ratio",
+    "china_imports"
+  ],
+  "related": [
+    "backwardation",
+    "contango",
+    "catalyst"
+  ],
+  "dataSource": "data/market/shipping.json",
+  "updateMode": "static-json / future-api-ready",
+  "interpretation": "JSONデータを更新すると画面表示と検索結果が自動で変わる設計。"
+}

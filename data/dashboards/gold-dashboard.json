@@ -1,0 +1,22 @@
+{
+  "id": "gold-dashboard",
+  "type": "dashboard",
+  "title": "Gold / Silver Dashboard",
+  "summary": "Gold、Silver、Lease Rate、COMEX在庫、LBMA、EFP、ETFフローから貴金属ストレスを判定する。",
+  "metrics": [
+    "gold",
+    "silver",
+    "lease_rate",
+    "comex_inventory",
+    "efp_spread",
+    "etf_flow"
+  ],
+  "related": [
+    "vol-expansion",
+    "risk-off",
+    "skew-index"
+  ],
+  "dataSource": "data/market/gold.json",
+  "updateMode": "static-json / future-api-ready",
+  "interpretation": "JSONデータを更新すると画面表示と検索結果が自動で変わる設計。"
+}

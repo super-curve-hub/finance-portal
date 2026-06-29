@@ -1,0 +1,23 @@
+{
+  "id": "oil-dashboard",
+  "type": "dashboard",
+  "title": "Oil Regime Dashboard",
+  "summary": "Brent、WTI、Dubai、OSP、Crack、Tanker、Inventoryから原油レジームを判定する。",
+  "metrics": [
+    "brent",
+    "wti",
+    "dubai",
+    "crack_spread",
+    "osp",
+    "tanker_rate",
+    "inventory"
+  ],
+  "related": [
+    "event-pass",
+    "risk-off",
+    "term-structure"
+  ],
+  "dataSource": "data/market/oil.json",
+  "updateMode": "static-json / future-api-ready",
+  "interpretation": "JSONデータを更新すると画面表示と検索結果が自動で変わる設計。"
+}

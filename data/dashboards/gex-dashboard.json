@@ -1,0 +1,26 @@
+{
+  "id": "gex-dashboard",
+  "type": "dashboard",
+  "title": "GEX Dashboard",
+  "summary": "オプション建玉からDealer Gamma、Gamma Flip、Call Wall、Put Wall、Vanna、Charmを推定する。",
+  "metrics": [
+    "spot",
+    "net_gex",
+    "gamma_flip",
+    "call_wall",
+    "put_wall",
+    "vanna",
+    "charm",
+    "zero_dte_share"
+  ],
+  "related": [
+    "gamma-flip",
+    "gex",
+    "vanna",
+    "charm",
+    "zero-dte"
+  ],
+  "dataSource": "data/market/gex.json",
+  "updateMode": "static-json / future-api-ready",
+  "interpretation": "JSONデータを更新すると画面表示と検索結果が自動で変わる設計。"
+}
