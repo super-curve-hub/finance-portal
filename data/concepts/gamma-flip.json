@@ -1,20 +1,120 @@
 {
-  "id":"gamma-flip",
-  "type":"concept",
-  "title":"Gamma Flip",
-  "category":"Dealer Flow",
-  "summary":"市場全体のGEXがプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯。",
-  "plain_jp":"ディーラーのヘッジ行動が逆張りから順張り、または順張りから逆張りへ変わる価格。",
-  "description":"Gamma Flipは、オプション建玉から推定されるディーラーのNet Gammaがゼロ付近を通過する価格帯です。価格がこの水準を越えると、ディーラーのデルタヘッジ方向が変わり、相場の変動特性が変化します。Long Gammaでは上昇時に売り、下落時に買うため平均回帰しやすく、Short Gammaでは上昇時に買い、下落時に売るためトレンドが増幅しやすくなります。",
-  "formula":"Net GEX = sum(Gamma_i * OpenInterest_i * ContractMultiplier)",
-  "bull_bear":{"bull":5,"bear":2},
-  "dealer_action":"Long Gamma環境では逆張りヘッジ、Short Gamma環境では順張りヘッジになりやすい。",
-  "trader_watch":["SpotとGamma Flipの距離","Net GEXの符号と絶対値","Call Wall / Put Wall","0DTE建玉","Vanna / Charmの向き"],
-  "report_examples":[{"source":"Bloomberg風","text":"Spot traded above the estimated Gamma Flip, triggering dealer buy hedging.","jp":"価格が推定Gamma Flipを上回り、ディーラーの買いヘッジが発生した。"}],
-  "related":["gex","dealer-long-gamma","dealer-short-gamma","vanna","charm","zero-dte"],
-  "dashboards":["gex-dashboard"],
-  "research":["dealer-flow-regime-note"],
-  "charts":["gamma-flip-map"],
-  "tags":["options","gex","dealer-flow","gamma"],
-  "page":"gamma-flip.html"
+  "metadata": {
+    "version": "1.0",
+    "updated": "2026-06-29",
+    "author": "SUPER CURVE"
+  },
+
+  "display": {
+    "icon": "📊",
+    "color": "blue"
+  },
+
+  "id": "gamma-flip",
+
+  "type": "concept",
+
+  "category": "dealer-flow",
+
+  "category_name": "Dealer Flow",
+
+  "title": "Gamma Flip",
+
+  "english": "Gamma Flip",
+
+  "summary": "市場全体のGamma Exposure（GEX）がプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯。",
+
+  "plain_jp": "ディーラーのヘッジ行動が逆張りから順張り、または順張りから逆張りへ変わる価格。",
+
+  "description": "Gamma Flipとは、市場全体のNet Gamma Exposure（GEX）がゼロを跨ぐ価格帯を指します。この価格を境にディーラーのデルタヘッジ方向が変化します。Long Gammaでは価格上昇時に売り・下落時に買う逆張りヘッジとなり、相場は平均回帰しやすくなります。一方、Short Gammaでは価格上昇時に買い・下落時に売る順張りヘッジとなるため、トレンドが増幅しやすくなります。",
+
+  "formula": {
+    "ascii": "Net GEX = Σ(Gamma × Open Interest × Contract Multiplier)",
+    "latex": "Net\\ GEX = \\sum_i \\Gamma_i \\times OI_i \\times Multiplier_i"
+  },
+
+  "market_impact": {
+    "bull": 5,
+    "bear": 2,
+    "description": "Gamma Flipを上抜けるとShort Gammaに入りやすく、トレンドが加速しやすい。Long Gammaでは価格は平均回帰しやすい。"
+  },
+
+  "dealer_action": {
+    "long_gamma": [
+      "価格上昇 → 売る",
+      "価格下落 → 買う"
+    ],
+    "short_gamma": [
+      "価格上昇 → 買う",
+      "価格下落 → 売る"
+    ]
+  },
+
+  "trader_watch": [
+    "Spot価格とGamma Flipの距離",
+    "Net GEXの符号と絶対値",
+    "Call Wall",
+    "Put Wall",
+    "0DTE建玉",
+    "Vanna",
+    "Charm"
+  ],
+
+  "report_examples": [
+    {
+      "source": "Bloomberg",
+      "english": "Spot traded above the estimated Gamma Flip, triggering dealer buy hedging.",
+      "japanese": "価格が推定Gamma Flipを上回り、ディーラーの買いヘッジが発生した。"
+    },
+    {
+      "source": "Goldman Sachs",
+      "english": "Negative Gamma regime remains dominant.",
+      "japanese": "市場は依然としてNegative Gamma環境にあり、値動きが拡大しやすい。"
+    },
+    {
+      "source": "JPMorgan",
+      "english": "Charm flows are expected to support equities.",
+      "japanese": "Charmフローが株式市場を支えると予想される。"
+    }
+  ],
+
+  "related": [
+    "gex",
+    "dealer-long-gamma",
+    "dealer-short-gamma",
+    "vanna",
+    "charm",
+    "call-wall",
+    "put-wall",
+    "zero-dte"
+  ],
+
+  "dashboards": [
+    "gex-dashboard"
+  ],
+
+  "research": [
+    "dealer-flow-regime-note"
+  ],
+
+  "charts": [
+    "gamma-flip-map"
+  ],
+
+  "news": [
+    "bloomberg-gamma-flip",
+    "gs-negative-gamma",
+    "jpm-charm-flow"
+  ],
+
+  "tags": [
+    "options",
+    "gamma",
+    "gex",
+    "dealer-flow",
+    "volatility",
+    "market-microstructure"
+  ],
+
+  "page": "gamma-flip.html"
 }
