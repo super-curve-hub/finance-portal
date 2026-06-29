@@ -1,35 +1,44 @@
 {
+  "version": "3.0.0-alpha-builder",
+  "count": 6,
   "objects": [
     {
       "id": "charm",
       "title": "Charm",
       "summary": "時間経過によるDelta変化を表す感応度。",
+      "plain_jp": "時間が経つだけでディーラーがヘッジを調整する力。",
       "category": "Greeks",
+      "category_name": "",
+      "type": "concept",
       "tags": [
         "options",
         "greeks",
         "charm"
       ],
-      "type": "concept",
       "url": "/finance-portal/handbook/charm.html"
     },
     {
       "id": "dealer-long-gamma",
       "title": "Dealer Long Gamma",
       "summary": "ディーラーが正Gammaを持つ状態。",
+      "plain_jp": "相場が上がると売り、下がると買うため、値動きが落ち着きやすい状態。",
       "category": "Dealer Flow",
+      "category_name": "",
+      "type": "concept",
       "tags": [
         "options",
         "dealer-flow"
       ],
-      "type": "concept",
       "url": "/finance-portal/handbook/dealer-long-gamma.html"
     },
     {
       "id": "gamma-flip",
       "title": "Gamma Flip",
       "summary": "市場全体のGamma Exposure（GEX）がプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯。",
+      "plain_jp": "ディーラーのヘッジ行動が逆張りから順張り、または順張りから逆張りへ変わる価格。",
       "category": "dealer-flow",
+      "category_name": "Dealer Flow",
+      "type": "concept",
       "tags": [
         "options",
         "gamma",
@@ -38,46 +47,51 @@
         "volatility",
         "market-microstructure"
       ],
-      "type": "concept",
       "url": "/finance-portal/handbook/gamma-flip.html"
     },
     {
       "id": "gex",
       "title": "Gamma Exposure (GEX)",
       "summary": "オプション市場全体のGamma量を推定する指標。",
+      "plain_jp": "ディーラーがどれくらいヘッジ売買を迫られやすいかを見るための指標。",
       "category": "Dealer Flow",
+      "category_name": "",
+      "type": "concept",
       "tags": [
         "options",
         "gamma",
         "gex"
       ],
-      "type": "concept",
       "url": "/finance-portal/handbook/gex.html"
     },
     {
       "id": "vanna",
       "title": "Vanna",
       "summary": "IV変化によるDelta変化を表す感応度。",
+      "plain_jp": "ボラティリティが動いたとき、ディーラーの株先物ヘッジがどう変わるかを見る指標。",
       "category": "Greeks",
+      "category_name": "",
+      "type": "concept",
       "tags": [
         "options",
         "greeks",
         "vanna"
       ],
-      "type": "concept",
       "url": "/finance-portal/handbook/vanna.html"
     },
     {
       "id": "zero-dte",
       "title": "0DTE",
       "summary": "当日満期オプション。",
+      "plain_jp": "その日に満期を迎えるオプションで、短時間のヘッジフローが相場を動かしやすい。",
       "category": "Options Flow",
+      "category_name": "",
+      "type": "concept",
       "tags": [
         "options",
         "0dte",
         "intraday"
       ],
-      "type": "concept",
       "url": "/finance-portal/handbook/zero-dte.html"
     }
   ]

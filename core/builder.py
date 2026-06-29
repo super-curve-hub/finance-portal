@@ -1,19 +1,35 @@
 """
 SUPER CURVE TERMINAL
-Builder Engine v3.0.0-alpha
+Builder Engine
+
+Version : v3.0.0-alpha-builder
 """
 
-from pathlib import Path
-import json
+from __future__ import annotations
 
-from core.renderer import render_page, render_handbook_content
-from core.templates import load_layout, load_handbook_template
+import json
+from pathlib import Path
+
+from core.renderer import (
+    render_page,
+    render_handbook_content,
+)
+
+from core.templates import (
+    load_layout,
+    load_handbook_template,
+)
+
+from core.search import generate_search
+from core.graph import generate_graph
 
 
 ROOT = Path(__file__).resolve().parent.parent
 
 CONCEPT_DIR = ROOT / "data" / "concepts"
+
 HANDBOOK_DIR = ROOT / "handbook"
+
 API_DIR = ROOT / "api"
 
 
@@ -22,13 +38,15 @@ class Builder:
     def __init__(self):
 
         self.layout = load_layout()
+
         self.handbook_template = load_handbook_template()
 
         HANDBOOK_DIR.mkdir(exist_ok=True)
+
         API_DIR.mkdir(exist_ok=True)
 
     # --------------------------------------------------
-    # JSON読込
+    # Load Concepts
     # --------------------------------------------------
 
     def load_concepts(self):
@@ -38,6 +56,7 @@ class Builder:
         for file in sorted(CONCEPT_DIR.glob("*.json")):
 
             with open(file, encoding="utf-8") as f:
+
                 obj = json.load(f)
 
             concepts.append(obj)
@@ -47,70 +66,72 @@ class Builder:
         return concepts
 
     # --------------------------------------------------
-    # Handbook生成
+    # Handbook Generator
     # --------------------------------------------------
 
     def build_handbook(self, concepts):
 
-        objects = []
-
         for concept in concepts:
 
             html = render_handbook_content(
+
                 self.handbook_template,
-                concept
+
+                concept,
+
             )
 
             page = render_page(
+
                 self.layout,
+
                 concept["title"],
+
                 html,
-                concept.get("summary", "")
+
+                concept.get("summary", ""),
+
             )
 
             outfile = HANDBOOK_DIR / f'{concept["id"]}.html'
 
-            outfile.write_text(page, encoding="utf-8")
+            outfile.write_text(
+
+                page,
+
+                encoding="utf-8",
+
+            )
 
             print(f"✓ handbook/{outfile.name}")
 
-            objects.append({
-
-                "id": concept["id"],
-                "title": concept["title"],
-                "summary": concept.get("summary", ""),
-                "category": concept.get("category", ""),
-                "tags": concept.get("tags", []),
-                "type": "concept",
-                "url": f"/finance-portal/handbook/{concept['id']}.html"
-
-            })
-
-        return objects
-
     # --------------------------------------------------
-    # Search生成
+    # Search Generator
     # --------------------------------------------------
 
-    def build_search(self, objects):
+    def build_search(self, concepts):
 
-        outfile = API_DIR / "search.json"
+        return generate_search(
 
-        outfile.write_text(
+            API_DIR,
 
-            json.dumps(
-                {
-                    "objects": objects
-                },
-                ensure_ascii=False,
-                indent=2
-            ),
-
-            encoding="utf-8"
+            concepts,
 
         )
 
-        print("✓ api/search.json")
+    # --------------------------------------------------
+    # Knowledge Graph
+    # --------------------------------------------------
+
+    def build_graph(self, concepts):
+
+        return generate_graph(
+
+            API_DIR,
+
+            concepts,
+
+        )
 
     # --------------------------------------------------
     # Handbook Index
@@ -122,7 +143,9 @@ class Builder:
 
         for c in concepts:
 
-            cards.append(f"""
+            cards.append(
+
+                f"""
 <a class="terminal-module"
 href="/finance-portal/handbook/{c['id']}.html">
 
@@ -131,7 +154,9 @@ href="/finance-portal/handbook/{c['id']}.html">
 <p>{c.get("summary","")}</p>
 
 </a>
-""")
+"""
+
+            )
 
         html = f"""
 <h1>Option Handbook</h1>
@@ -151,7 +176,7 @@ href="/finance-portal/handbook/{c['id']}.html">
 
             html,
 
-            "Option Knowledge Base"
+            "Option Knowledge Base",
 
         )
 
@@ -159,7 +184,7 @@ href="/finance-portal/handbook/{c['id']}.html">
 
             page,
 
-            encoding="utf-8"
+            encoding="utf-8",
 
         )
 
@@ -181,13 +206,23 @@ href="/finance-portal/handbook/{c['id']}.html">
 
         print("Generating Handbook...")
 
-        objects = self.build_handbook(concepts)
+        self.build_handbook(concepts)
 
         print()
 
         print("Generating Search...")
 
-        self.build_search(objects)
+        objects = self.build_search(concepts)
+
+        print(f"✓ Search Objects : {len(objects)}")
+
+        print()
+
+        print("Generating Knowledge Graph...")
+
+        graph = self.build_graph(concepts)
+
+        print(f"✓ Graph Nodes : {len(graph)}")
 
         print()
 
@@ -198,6 +233,8 @@ href="/finance-portal/handbook/{c['id']}.html">
         print()
 
         print("Done.")
+
+        return objects
 
 
 def build_site():
