@@ -1,0 +1,35 @@
+{
+  "title": "SUPER CURVE TERMINAL",
+  "subtitle": "Institutional Market Intelligence",
+
+  "hero": {
+    "headline": "Market Intelligence Platform",
+    "description": "Quantitative analytics, handbook, dashboards and knowledge graph."
+  },
+
+  "modules": [
+    {
+      "title": "Option Handbook",
+      "description": "Option theory and dealer positioning",
+      "url": "/finance-portal/handbook/"
+    },
+    {
+      "title": "Knowledge Graph",
+      "description": "Relationships between concepts",
+      "url": "/finance-portal/api/graph.json"
+    },
+    {
+      "title": "Search",
+      "description": "Search concepts and documentation",
+      "url": "/finance-portal/api/search.json"
+    }
+  ],
+
+  "roadmap": [
+    "Homepage Generator",
+    "Search Engine",
+    "Knowledge Graph",
+    "Dashboard Platform",
+    "RAG Engine"
+  ]
+}
