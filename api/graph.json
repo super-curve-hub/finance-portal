@@ -1,0 +1,169 @@
+{
+  "version": "3.0.0-alpha-builder",
+  "count": 6,
+  "graph": [
+    {
+      "id": "charm",
+      "title": "Charm",
+      "type": "concept",
+      "category": "Greeks",
+      "url": "/finance-portal/handbook/charm.html",
+      "summary": "時間経過によるDelta変化を表す感応度。",
+      "tags": [
+        "options",
+        "greeks",
+        "charm"
+      ],
+      "related": [
+        "vanna",
+        "gamma-flip",
+        "zero-dte"
+      ],
+      "dashboards": [
+        "gex-dashboard"
+      ],
+      "research": [],
+      "charts": [],
+      "news": []
+    },
+    {
+      "id": "dealer-long-gamma",
+      "title": "Dealer Long Gamma",
+      "type": "concept",
+      "category": "Dealer Flow",
+      "url": "/finance-portal/handbook/dealer-long-gamma.html",
+      "summary": "ディーラーが正Gammaを持つ状態。",
+      "tags": [
+        "options",
+        "dealer-flow"
+      ],
+      "related": [
+        "gex",
+        "gamma-flip",
+        "pinning"
+      ],
+      "dashboards": [
+        "gex-dashboard"
+      ],
+      "research": [],
+      "charts": [],
+      "news": []
+    },
+    {
+      "id": "gamma-flip",
+      "title": "Gamma Flip",
+      "type": "concept",
+      "category": "dealer-flow",
+      "url": "/finance-portal/handbook/gamma-flip.html",
+      "summary": "市場全体のGamma Exposure（GEX）がプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯。",
+      "tags": [
+        "options",
+        "gamma",
+        "gex",
+        "dealer-flow",
+        "volatility",
+        "market-microstructure"
+      ],
+      "related": [
+        "gex",
+        "dealer-long-gamma",
+        "dealer-short-gamma",
+        "vanna",
+        "charm",
+        "call-wall",
+        "put-wall",
+        "zero-dte"
+      ],
+      "dashboards": [
+        "gex-dashboard"
+      ],
+      "research": [
+        "dealer-flow-regime-note"
+      ],
+      "charts": [
+        "gamma-flip-map"
+      ],
+      "news": [
+        "bloomberg-gamma-flip",
+        "gs-negative-gamma",
+        "jpm-charm-flow"
+      ]
+    },
+    {
+      "id": "gex",
+      "title": "Gamma Exposure (GEX)",
+      "type": "concept",
+      "category": "Dealer Flow",
+      "url": "/finance-portal/handbook/gex.html",
+      "summary": "オプション市場全体のGamma量を推定する指標。",
+      "tags": [
+        "options",
+        "gamma",
+        "gex"
+      ],
+      "related": [
+        "gamma-flip",
+        "dealer-long-gamma",
+        "dealer-short-gamma"
+      ],
+      "dashboards": [
+        "gex-dashboard"
+      ],
+      "research": [
+        "dealer-flow-regime-note"
+      ],
+      "charts": [
+        "gamma-flip-map"
+      ],
+      "news": []
+    },
+    {
+      "id": "vanna",
+      "title": "Vanna",
+      "type": "concept",
+      "category": "Greeks",
+      "url": "/finance-portal/handbook/vanna.html",
+      "summary": "IV変化によるDelta変化を表す感応度。",
+      "tags": [
+        "options",
+        "greeks",
+        "vanna"
+      ],
+      "related": [
+        "gamma-flip",
+        "charm",
+        "gex"
+      ],
+      "dashboards": [
+        "gex-dashboard"
+      ],
+      "research": [],
+      "charts": [],
+      "news": []
+    },
+    {
+      "id": "zero-dte",
+      "title": "0DTE",
+      "type": "concept",
+      "category": "Options Flow",
+      "url": "/finance-portal/handbook/zero-dte.html",
+      "summary": "当日満期オプション。",
+      "tags": [
+        "options",
+        "0dte",
+        "intraday"
+      ],
+      "related": [
+        "gamma-flip",
+        "gex",
+        "charm"
+      ],
+      "dashboards": [
+        "gex-dashboard"
+      ],
+      "research": [],
+      "charts": [],
+      "news": []
+    }
+  ]
+}
