@@ -219,3 +219,16 @@ body > main .terminal-grid .terminal-grid {
   color: #ffc94a;
   text-decoration: underline;
 }
+
+/* Clickable Knowledge Graph panel */
+.terminal-link-panel {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.terminal-link-panel:hover {
+  border-color: rgba(245, 181, 55, 0.65);
+  transform: translateY(-1px);
+}
