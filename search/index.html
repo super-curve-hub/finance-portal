@@ -1,1 +1,303 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Search | SUPER CURVE TERMINAL</title><link rel="stylesheet" href="../assets/css/style.css?v=homefix2"></head><body><header class="terminal-header"><a class="brand" href="../index.html">SUPER CURVE TERMINAL</a><nav><a href="../glossary/index.html">Handbook</a></nav></header><main class="terminal-page"><section class="hero compact"><p class="eyebrow">RAG READY</p><h1>AI Search</h1><p>JSON Knowledge Graphを横断検索。将来はEmbedding / Vector DB / OpenAI APIへ接続。</p><input id="aiq" class="terminal-search" placeholder="Gamma Flipとは？ GEXとVannaの関係は？"><div id="answer" class="panel wide"></div><div id="results" class="card-grid"></div></section></main><script src="../assets/js/ai-search.js"></script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Search | SUPER CURVE TERMINAL</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=searchfix1">
+  <style>
+    .search-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 16px 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(120, 160, 220, 0.35);
+      background: rgba(10, 20, 36, 0.9);
+      color: #eaf2ff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 0 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(245, 181, 55, 0.55);
+      background: rgba(245, 181, 55, 0.14);
+      color: #ffc94a;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background: rgba(245, 181, 55, 0.22);
+    }
+
+    .search-status {
+      margin-top: 16px;
+      color: #9fb4d8;
+      font-size: 14px;
+    }
+
+    .search-results {
+      margin-top: 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .search-result {
+      display: block;
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(120, 160, 220, 0.25);
+      background: linear-gradient(180deg, rgba(18, 34, 58, 0.92), rgba(10, 18, 32, 0.92));
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .search-result strong {
+      display: block;
+      color: #eaf2ff;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .search-result p {
+      margin: 0;
+      color: #9fb4d8;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .search-meta {
+      margin-top: 10px;
+      color: #ffc94a;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 640px) {
+      .search-box {
+        grid-template-columns: 1fr;
+      }
+
+      .search-box button {
+        height: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>SUPER CURVE TERMINAL</h1>
+  <nav>
+    <a href="/finance-portal/">Home</a>
+    <a href="/finance-portal/handbook/">Handbook</a>
+    <a href="/finance-portal/dashboard/">Dashboard</a>
+    <a href="/finance-portal/library/">Library</a>
+    <a href="/finance-portal/search/">AI Search</a>
+  </nav>
+</header>
+
+<main>
+  <section class="terminal-hero">
+    <p class="terminal-subtitle">RAG READY</p>
+    <h1>AI Search</h1>
+    <p>
+      JSON Knowledge Graphを横断検索。将来はEmbedding / Vector DB / OpenAI APIへ接続。
+    </p>
+
+    <div class="search-box">
+      <input id="searchInput" type="search" placeholder="Gamma Flipとは？ GEXとVannaの関係は？" autocomplete="off">
+      <button id="searchButton" type="button">検索</button>
+    </div>
+
+    <div id="searchStatus" class="search-status">キーワードを入力して検索してください。</div>
+    <div id="searchResults" class="search-results"></div>
+  </section>
+</main>
+
+<footer>
+  <hr>
+  <p>© SUPER CURVE</p>
+</footer>
+
+<script>
+const fallbackData = [
+  {
+    title: "Gamma Exposure (GEX)",
+    url: "/finance-portal/handbook/gex.html",
+    category: "Handbook",
+    text: "GEXはオプション市場全体のGamma量を推定し、ディーラーのヘッジが相場を安定化させるか不安定化させるかを見る指標です。"
+  },
+  {
+    title: "Gamma Flip",
+    url: "/finance-portal/handbook/gamma-flip.html",
+    category: "Handbook",
+    text: "Gamma Flipは、市場全体のGamma Exposureがプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯です。"
+  },
+  {
+    title: "Dealer Long Gamma",
+    url: "/finance-portal/handbook/dealer-long-gamma.html",
+    category: "Handbook",
+    text: "Dealer Long Gammaは、ディーラーが正Gammaを持ち、価格変動に対して逆張りヘッジを行いやすい状態です。"
+  },
+  {
+    title: "Vanna",
+    url: "/finance-portal/handbook/vanna.html",
+    category: "Handbook",
+    text: "Vannaは、IVの変化によってDeltaがどれだけ変化するかを表す感応度です。"
+  },
+  {
+    title: "Charm",
+    url: "/finance-portal/handbook/charm.html",
+    category: "Handbook",
+    text: "Charmは、時間経過によってDeltaがどれだけ変化するかを表す感応度です。"
+  },
+  {
+    title: "0DTE",
+    url: "/finance-portal/handbook/zero-dte.html",
+    category: "Handbook",
+    text: "0DTEは当日満期オプションで、短時間にGamma、Charm、Vannaが集中しやすい商品です。"
+  }
+];
+
+let searchData = fallbackData;
+
+function normalizeText(value) {
+  return String(value || "").toLowerCase();
+}
+
+function scoreItem(item, query) {
+  const q = normalizeText(query);
+  const title = normalizeText(item.title);
+  const text = normalizeText(item.text || item.description || item.summary);
+  const category = normalizeText(item.category || item.type);
+
+  let score = 0;
+  if (title.includes(q)) score += 10;
+  if (text.includes(q)) score += 5;
+  if (category.includes(q)) score += 2;
+
+  const tokens = q.split(/\s+/).filter(Boolean);
+  for (const token of tokens) {
+    if (title.includes(token)) score += 4;
+    if (text.includes(token)) score += 2;
+    if (category.includes(token)) score += 1;
+  }
+
+  return score;
+}
+
+function renderResults(results, query) {
+  const status = document.getElementById("searchStatus");
+  const box = document.getElementById("searchResults");
+
+  box.innerHTML = "";
+
+  if (!query.trim()) {
+    status.textContent = "キーワードを入力して検索してください。";
+    return;
+  }
+
+  if (results.length === 0) {
+    status.textContent = "検索結果はありません。";
+    return;
+  }
+
+  status.textContent = `${results.length}件ヒットしました。`;
+
+  for (const item of results) {
+    const href = item.url || item.href || "#";
+    const title = item.title || item.name || "Untitled";
+    const text = item.text || item.description || item.summary || "";
+    const category = item.category || item.type || "SEARCH RESULT";
+
+    const a = document.createElement("a");
+    a.className = "search-result";
+    a.href = href;
+    a.innerHTML = `
+      <strong>${escapeHtml(title)}</strong>
+      <p>${escapeHtml(text)}</p>
+      <div class="search-meta">${escapeHtml(category)}</div>
+    `;
+    box.appendChild(a);
+  }
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, s => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;"
+  }[s]));
+}
+
+function runSearch() {
+  const input = document.getElementById("searchInput");
+  const query = input.value.trim();
+
+  const results = searchData
+    .map(item => ({ item, score: scoreItem(item, query) }))
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 20)
+    .map(x => x.item);
+
+  renderResults(results, query);
+}
+
+async function loadSearchData() {
+  const candidates = [
+    "/finance-portal/api/search.json",
+    "/finance-portal/api/graph.json"
+  ];
+
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+
+      const json = await res.json();
+
+      if (Array.isArray(json)) {
+        searchData = json;
+        return;
+      }
+
+      if (Array.isArray(json.items)) {
+        searchData = json.items;
+        return;
+      }
+
+      if (Array.isArray(json.nodes)) {
+        searchData = json.nodes.map(node => ({
+          title: node.title || node.name || node.id,
+          url: node.url || node.href || "#",
+          category: node.category || node.type || "Knowledge Graph",
+          text: node.text || node.description || node.summary || ""
+        }));
+        return;
+      }
+    } catch (e) {
+      console.warn("Search data load failed:", url, e);
+    }
+  }
+}
+
+document.getElementById("searchButton").addEventListener("click", runSearch);
+document.getElementById("searchInput").addEventListener("keydown", event => {
+  if (event.key === "Enter") runSearch();
+});
+
+loadSearchData();
+</script>
+</body>
+</html>
