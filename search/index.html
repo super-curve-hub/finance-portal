@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>AI Search | SUPER CURVE TERMINAL</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=searchfix2">
+  <link rel="stylesheet" href="../assets/css/style.css?v=searchfix3">
   <style>
     /* Search page layout override */
     main {
@@ -163,6 +163,12 @@
 <script>
 const fallbackData = [
   {
+    title: "GEXとVannaの関係",
+    url: "/finance-portal/handbook/gex.html",
+    category: "Concept Relation",
+    text: "GEXは価格変化に対するディーラーGammaヘッジ圧力を示し、VannaはIV変化によるDeltaヘッジ圧力を示します。GEXが市場の安定・不安定を決める土台で、Vannaはボラティリティ低下や上昇時に追加の買い・売りフローを発生させます。"
+  },
+  {
     title: "Gamma Exposure (GEX)",
     url: "/finance-portal/handbook/gex.html",
     category: "Handbook",
@@ -203,7 +209,13 @@ const fallbackData = [
 let searchData = fallbackData;
 
 function normalizeText(value) {
-  return String(value || "").toLowerCase();
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[？?。．、,]/g, " ")
+    .replace(/[と・/／]/g, " ")
+    .replace(/の関係|関係|とは|は/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function scoreItem(item, query) {
