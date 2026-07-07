@@ -205,21 +205,6 @@ body > main .terminal-grid .terminal-grid {
   }
 }
 
-/* Roadmap phase links */
-.roadmap-phase-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.roadmap-phase-link strong {
-  color: #eaf2ff;
-}
-
-.roadmap-phase-link:hover strong {
-  color: #ffc94a;
-  text-decoration: underline;
-}
-
 /* Clickable Knowledge Graph panel */
 .terminal-link-panel {
   display: block;
