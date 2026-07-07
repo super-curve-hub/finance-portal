@@ -4,9 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>AI Search | SUPER CURVE TERMINAL</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=searchfix1">
+  <link rel="stylesheet" href="../assets/css/style.css?v=searchfix2">
   <style>
-    .search-box {
+    /* Search page layout override */
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .search-page {
+      display: block !important;
+    }
+
+    .search-page .terminal-subtitle {
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .search-page h1 {
+      margin: 0 0 22px;
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .search-page > p {
+      max-width: 100%;
+      margin: 0 0 28px;
+      color: #cfe0ff;
+      line-height: 1.8;
+    }
+
+
+
+.search-box {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 12px;
@@ -82,7 +114,8 @@
     }
 
     @media (max-width: 640px) {
-      .search-box {
+  
+.search-box {
         grid-template-columns: 1fr;
       }
 
@@ -105,7 +138,7 @@
 </header>
 
 <main>
-  <section class="terminal-hero">
+  <section class="terminal-hero search-page">
     <p class="terminal-subtitle">RAG READY</p>
     <h1>AI Search</h1>
     <p>
