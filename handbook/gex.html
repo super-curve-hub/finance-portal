@@ -1,100 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Gamma Exposure (GEX)</title>
-
-<link rel="stylesheet" href="../assets/css/style.css?v=homefix2">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gamma Exposure (GEX) | Option Handbook</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=handbookfix1">
 </head>
-
 <body>
-
 <header>
-
-<h1>SUPER CURVE TERMINAL</h1>
-
-<nav>
-
-<a href="/finance-portal/">Home</a>
-
-<a href="/finance-portal/handbook/">Handbook</a>
-
-<a href="/finance-portal/dashboard/">Dashboard</a>
-
-<a href="/finance-portal/library/">Library</a>
-
-<a href="/finance-portal/search/">AI Search</a>
-
-</nav>
-
+  <h1>SUPER CURVE TERMINAL</h1>
+  <nav>
+    <a href="/finance-portal/">Home</a>
+    <a href="/finance-portal/handbook/">Handbook</a>
+    <a href="/finance-portal/dashboard/">Dashboard</a>
+    <a href="/finance-portal/library/">Library</a>
+    <a href="/finance-portal/search/">AI Search</a>
+  </nav>
 </header>
 
 <main>
+  <section class="terminal-hero">
+    <h1>Gamma Exposure (GEX)</h1>
+    <p class="terminal-subtitle">OPTIONS FLOW / DEALER HEDGING</p>
 
-<h1>Gamma Exposure (GEX)</h1>
+    <div class="terminal-hero-box">
+      <h2>一言でいうと</h2>
+      <p>GEXは、オプション市場全体のGamma量を推定し、ディーラーのヘッジが相場を安定化させるか不安定化させるかを見る指標です。</p>
+    </div>
+  </section>
 
-<p><strong>Gamma Exposure (GEX)</strong></p>
+  <section>
+    <h2>詳しい説明</h2>
+    <div class="terminal-panel">
+      <p>GEXがプラスならディーラーは逆張りヘッジになりやすく、相場は安定しやすいです。GEXがマイナスなら順張りヘッジになりやすく、値動きが増幅されやすくなります。</p>
+    </div>
+  </section>
 
-<hr>
+  <section>
+    <h2>Formula</h2>
+    <div class="terminal-panel">
+      <pre class="terminal-code">GEX ≈ Σ Gamma × Open Interest × Contract Size × Spot</pre>
+    </div>
+  </section>
 
-<h2>🇯🇵 一言でいうと</h2>
+  <section>
+    <h2>Market Impact</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Bull</strong>
+        <p>プラスGEX環境では下落時に買いヘッジが入りやすく、押し目が支えられやすくなります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Bear</strong>
+        <p>マイナスGEX環境では下落時に売りヘッジが出やすく、急落リスクが高まります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Neutral</strong>
+        <p>GEXが大きくプラスの場合、価格は主要ストライク周辺にピン留めされやすくなります。</p>
+      </div>
+    </div>
+  </section>
 
-<p>ディーラーがどれくらいヘッジ売買を迫られやすいかを見るための指標。</p>
+  <section>
+    <h2>Dealer Action</h2>
+    <div class="terminal-panel">
+      <p>ディーラーはオプション販売や在庫に伴うDelta変化をヘッジします。GEXは、そのヘッジが逆張りか順張りかを推定するための市場構造指標です。</p>
+    </div>
+  </section>
 
-<h2>📚 詳しい説明</h2>
+  <section>
+    <h2>Trader Watch</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Net GEX</strong>
+        <p>市場全体のGammaがプラスかマイナスかを確認します。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Gamma Flip</strong>
+        <p>Net GEXがゼロになる価格帯は、安定・不安定の境界になります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Strike Concentration</strong>
+        <p>建玉が集中するCall WallやPut Wallは価格の吸引点になります。</p>
+      </div>
+    </div>
+  </section>
 
-<p>GEXは各ストライクのGamma、建玉、契約倍率を合算して、市場全体のヘッジ圧力を推定します。正のGEXは平均回帰、負のGEXはトレンド増幅の傾向を示します。</p>
-
-<h2>🧮 Formula</h2>
-
-<pre>{{formula_ascii}}</pre>
-
-<h2>📈 Market Impact</h2>
-
-<p></p>
-
-<p>
-
-Bull : 
-
-<br>
-
-Bear : 
-
-</p>
-
-<h2>💹 Dealer Action</h2>
-
-<p class="muted">-</p>
-
-<h2>🎯 Trader Watch</h2>
-
-<p class="muted">-</p>
-
-<h2>🔗 Related</h2>
-
-<div class="tag-row"><a class="tag" href="/finance-portal/handbook/gamma-flip.html">gamma-flip</a><a class="tag" href="/finance-portal/handbook/dealer-long-gamma.html">dealer-long-gamma</a><a class="tag" href="/finance-portal/handbook/dealer-short-gamma.html">dealer-short-gamma</a></div>
-
-<h2>📰 Report Examples</h2>
-
-<p class="muted">-</p>
-
+  <section>
+    <h2>Related</h2>
+    <div class="terminal-grid">
+      <a class="terminal-module" href="/finance-portal/handbook/gamma-flip.html">
+        <strong>Gamma Flip</strong>
+        <p>GEXがゼロクロスする重要水準。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/dealer-long-gamma.html">
+        <strong>Dealer Long Gamma</strong>
+        <p>プラスGEX環境の典型的なディーラー構造。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/vanna.html">
+        <strong>Vanna</strong>
+        <p>IV変化によるDelta調整フロー。</p>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer>
-
-<hr>
-
-<p>© SUPER CURVE</p>
-
+  <hr>
+  <p>© SUPER CURVE</p>
 </footer>
-
 </body>
-
 </html>

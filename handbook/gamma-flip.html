@@ -1,129 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Gamma Flip</title>
-
-<link rel="stylesheet" href="../assets/css/style.css?v=homefix2">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gamma Flip | Option Handbook</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=handbookfix1">
 </head>
-
 <body>
-
 <header>
-
-<h1>SUPER CURVE TERMINAL</h1>
-
-<nav>
-
-<a href="/finance-portal/">Home</a>
-
-<a href="/finance-portal/handbook/">Handbook</a>
-
-<a href="/finance-portal/dashboard/">Dashboard</a>
-
-<a href="/finance-portal/library/">Library</a>
-
-<a href="/finance-portal/search/">AI Search</a>
-
-</nav>
-
+  <h1>SUPER CURVE TERMINAL</h1>
+  <nav>
+    <a href="/finance-portal/">Home</a>
+    <a href="/finance-portal/handbook/">Handbook</a>
+    <a href="/finance-portal/dashboard/">Dashboard</a>
+    <a href="/finance-portal/library/">Library</a>
+    <a href="/finance-portal/search/">AI Search</a>
+  </nav>
 </header>
 
 <main>
+  <section class="terminal-hero">
+    <h1>Gamma Flip</h1>
+    <p class="terminal-subtitle">MARKET STRUCTURE / STABILITY THRESHOLD</p>
 
-<h1>Gamma Flip</h1>
+    <div class="terminal-hero-box">
+      <h2>一言でいうと</h2>
+      <p>Gamma Flipは、市場全体のGamma Exposureがプラスからマイナス、またはマイナスからプラスへ切り替わる価格帯です。</p>
+    </div>
+  </section>
 
-<p><strong>Gamma Flip</strong></p>
+  <section>
+    <h2>詳しい説明</h2>
+    <div class="terminal-panel">
+      <p>Gamma Flipを境に、ディーラーのヘッジ行動が逆張りから順張りへ変化しやすくなります。そのため、同じ値動きでもFlipの上側と下側では市場の安定性が大きく変わります。</p>
+    </div>
+  </section>
 
-<hr>
+  <section>
+    <h2>Formula</h2>
+    <div class="terminal-panel">
+      <pre class="terminal-code">Gamma Flip = Price level where Net GEX crosses zero</pre>
+    </div>
+  </section>
 
-<h2>🇯🇵 一言でいうと</h2>
+  <section>
+    <h2>Market Impact</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Bull</strong>
+        <p>スポットがFlip上側にありLong Gamma環境なら、下落時の買いヘッジが相場を支えやすくなります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Bear</strong>
+        <p>スポットがFlip下側に入りShort Gamma化すると、下落時の売りヘッジが値動きを増幅しやすくなります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Neutral</strong>
+        <p>Flip近辺ではヘッジの向きが不安定になり、短期的な値動きが荒くなりやすいです。</p>
+      </div>
+    </div>
+  </section>
 
-<p>ディーラーのヘッジ行動が逆張りから順張り、または順張りから逆張りへ変わる価格。</p>
+  <section>
+    <h2>Dealer Action</h2>
+    <div class="terminal-panel">
+      <p>ディーラーはFlipを跨ぐと、必要なDeltaヘッジの方向が変化します。これにより、ブレイク後の加速や、反対にレンジ回帰が起こりやすくなります。</p>
+    </div>
+  </section>
 
-<h2>📚 詳しい説明</h2>
+  <section>
+    <h2>Trader Watch</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Spot vs Flip</strong>
+        <p>現在価格がGamma Flipの上か下かを最優先で確認します。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Wall位置</strong>
+        <p>Call Wall、Put Wallとの距離を見ることで、次の吸引点や防衛線を推定します。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>OPEX後</strong>
+        <p>満期通過後はGammaが剥落し、Flip水準が大きく移動することがあります。</p>
+      </div>
+    </div>
+  </section>
 
-<p>Gamma Flipとは、市場全体のNet Gamma Exposure（GEX）がゼロを跨ぐ価格帯を指します。この価格を境にディーラーのデルタヘッジ方向が変化します。Long Gammaでは価格上昇時に売り・下落時に買う逆張りヘッジとなり、相場は平均回帰しやすくなります。一方、Short Gammaでは価格上昇時に買い・下落時に売る順張りヘッジとなるため、トレンドが増幅しやすくなります。</p>
-
-<h2>🧮 Formula</h2>
-
-<pre>{{formula_ascii}}</pre>
-
-<h2>📈 Market Impact</h2>
-
-<p>Gamma Flipを上抜けるとShort Gammaに入りやすく、トレンドが加速しやすい。Long Gammaでは価格は平均回帰しやすい。</p>
-
-<p>
-
-Bull : 5
-
-<br>
-
-Bear : 2
-
-</p>
-
-<h2>💹 Dealer Action</h2>
-
-
-<div class="terminal-grid two-col">
-  <article class="terminal-panel">
-    <div class="panel-head"><span>Long Gamma</span><strong>Mean Reversion</strong></div>
-    <ul><li>価格上昇 → 売る</li><li>価格下落 → 買う</li></ul>
-  </article>
-  <article class="terminal-panel">
-    <div class="panel-head"><span>Short Gamma</span><strong>Trend Amplification</strong></div>
-    <ul><li>価格上昇 → 買う</li><li>価格下落 → 売る</li></ul>
-  </article>
-</div>
-
-
-<h2>🎯 Trader Watch</h2>
-
-<ul><li>Spot価格とGamma Flipの距離</li><li>Net GEXの符号と絶対値</li><li>Call Wall</li><li>Put Wall</li><li>0DTE建玉</li><li>Vanna</li><li>Charm</li></ul>
-
-<h2>🔗 Related</h2>
-
-<div class="tag-row"><a class="tag" href="/finance-portal/handbook/gex.html">gex</a><a class="tag" href="/finance-portal/handbook/dealer-long-gamma.html">dealer-long-gamma</a><a class="tag" href="/finance-portal/handbook/dealer-short-gamma.html">dealer-short-gamma</a><a class="tag" href="/finance-portal/handbook/vanna.html">vanna</a><a class="tag" href="/finance-portal/handbook/charm.html">charm</a><a class="tag" href="/finance-portal/handbook/call-wall.html">call-wall</a><a class="tag" href="/finance-portal/handbook/put-wall.html">put-wall</a><a class="tag" href="/finance-portal/handbook/zero-dte.html">zero-dte</a></div>
-
-<h2>📰 Report Examples</h2>
-
-
-<article class="terminal-panel">
-  <div class="panel-head"><span>Bloomberg</span><strong>Example</strong></div>
-  <p class="terminal-quote">"Spot traded above the estimated Gamma Flip, triggering dealer buy hedging."</p>
-  <p>価格が推定Gamma Flipを上回り、ディーラーの買いヘッジが発生した。</p>
-</article>
-\n
-<article class="terminal-panel">
-  <div class="panel-head"><span>Goldman Sachs</span><strong>Example</strong></div>
-  <p class="terminal-quote">"Negative Gamma regime remains dominant."</p>
-  <p>市場は依然としてNegative Gamma環境にあり、値動きが拡大しやすい。</p>
-</article>
-\n
-<article class="terminal-panel">
-  <div class="panel-head"><span>JPMorgan</span><strong>Example</strong></div>
-  <p class="terminal-quote">"Charm flows are expected to support equities."</p>
-  <p>Charmフローが株式市場を支えると予想される。</p>
-</article>
-
-
+  <section>
+    <h2>Related</h2>
+    <div class="terminal-grid">
+      <a class="terminal-module" href="/finance-portal/handbook/gex.html">
+        <strong>Gamma Exposure</strong>
+        <p>Gamma Flipを計算する前提となる集計指標。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/dealer-long-gamma.html">
+        <strong>Dealer Long Gamma</strong>
+        <p>Flip上側で起きやすい安定化構造。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/zero-dte.html">
+        <strong>0DTE</strong>
+        <p>短期Gammaの急変要因。</p>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer>
-
-<hr>
-
-<p>© SUPER CURVE</p>
-
+  <hr>
+  <p>© SUPER CURVE</p>
 </footer>
-
 </body>
-
 </html>

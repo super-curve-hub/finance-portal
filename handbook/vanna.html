@@ -1,100 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Vanna</title>
-
-<link rel="stylesheet" href="../assets/css/style.css?v=homefix2">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vanna | Option Handbook</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=handbookfix1">
 </head>
-
 <body>
-
 <header>
-
-<h1>SUPER CURVE TERMINAL</h1>
-
-<nav>
-
-<a href="/finance-portal/">Home</a>
-
-<a href="/finance-portal/handbook/">Handbook</a>
-
-<a href="/finance-portal/dashboard/">Dashboard</a>
-
-<a href="/finance-portal/library/">Library</a>
-
-<a href="/finance-portal/search/">AI Search</a>
-
-</nav>
-
+  <h1>SUPER CURVE TERMINAL</h1>
+  <nav>
+    <a href="/finance-portal/">Home</a>
+    <a href="/finance-portal/handbook/">Handbook</a>
+    <a href="/finance-portal/dashboard/">Dashboard</a>
+    <a href="/finance-portal/library/">Library</a>
+    <a href="/finance-portal/search/">AI Search</a>
+  </nav>
 </header>
 
 <main>
+  <section class="terminal-hero">
+    <h1>Vanna</h1>
+    <p class="terminal-subtitle">OPTION GREEKS / VOLATILITY FLOW</p>
 
-<h1>Vanna</h1>
+    <div class="terminal-hero-box">
+      <h2>一言でいうと</h2>
+      <p>Vannaは、IVの変化によってDeltaがどれだけ変化するかを表す感応度です。</p>
+    </div>
+  </section>
 
-<p><strong>Vanna</strong></p>
+  <section>
+    <h2>詳しい説明</h2>
+    <div class="terminal-panel">
+      <p>Vannaは、ボラティリティ変化がディーラーのDeltaヘッジに与える影響を見るために重要です。特にイベント後のIV低下やリスクオン時のボラ低下局面では、Vanna由来のヘッジフローが相場を押し上げることがあります。</p>
+    </div>
+  </section>
 
-<hr>
+  <section>
+    <h2>Formula</h2>
+    <div class="terminal-panel">
+      <pre class="terminal-code">Vanna = ∂Delta / ∂Volatility</pre>
+    </div>
+  </section>
 
-<h2>🇯🇵 一言でいうと</h2>
+  <section>
+    <h2>Market Impact</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Bull</strong>
+        <p>IV低下によりディーラーのヘッジ買いが誘発される局面では、株価の上昇要因になります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Bear</strong>
+        <p>IV上昇局面ではヘッジ売りが出やすく、下落を増幅することがあります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Neutral</strong>
+        <p>Vanna単体では方向を決めず、Gamma、Charm、建玉構造と組み合わせて判断します。</p>
+      </div>
+    </div>
+  </section>
 
-<p>ボラティリティが動いたとき、ディーラーの株先物ヘッジがどう変わるかを見る指標。</p>
+  <section>
+    <h2>Dealer Action</h2>
+    <div class="terminal-panel">
+      <p>ディーラーはIV変化によって変わるDeltaを中立化するため、原資産や先物を売買します。イベント通過後のIV低下局面では、Vannaフローが目立ちやすくなります。</p>
+    </div>
+  </section>
 
-<h2>📚 詳しい説明</h2>
+  <section>
+    <h2>Trader Watch</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>IV Crush</strong>
+        <p>イベント通過後のIV低下はVannaフローを発生させやすいです。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Risk Reversal</strong>
+        <p>SkewやRRの変化は、Vannaの方向感を読む補助材料になります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Spot位置</strong>
+        <p>Call WallやPut Wall付近では、VannaとGammaの相互作用が強まります。</p>
+      </div>
+    </div>
+  </section>
 
-<p>VannaはDeltaのIV感応度です。イベント後にIVが低下すると、ディーラーのDeltaが変化し、株価指数の需給に影響します。</p>
-
-<h2>🧮 Formula</h2>
-
-<pre>{{formula_ascii}}</pre>
-
-<h2>📈 Market Impact</h2>
-
-<p></p>
-
-<p>
-
-Bull : 
-
-<br>
-
-Bear : 
-
-</p>
-
-<h2>💹 Dealer Action</h2>
-
-<p class="muted">-</p>
-
-<h2>🎯 Trader Watch</h2>
-
-<p class="muted">-</p>
-
-<h2>🔗 Related</h2>
-
-<div class="tag-row"><a class="tag" href="/finance-portal/handbook/gamma-flip.html">gamma-flip</a><a class="tag" href="/finance-portal/handbook/charm.html">charm</a><a class="tag" href="/finance-portal/handbook/gex.html">gex</a></div>
-
-<h2>📰 Report Examples</h2>
-
-<p class="muted">-</p>
-
+  <section>
+    <h2>Related</h2>
+    <div class="terminal-grid">
+      <a class="terminal-module" href="/finance-portal/handbook/charm.html">
+        <strong>Charm</strong>
+        <p>時間経過によるDelta変化。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/gex.html">
+        <strong>Gamma Exposure</strong>
+        <p>Vannaフローが働く土台となるGamma構造。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/gamma-flip.html">
+        <strong>Gamma Flip</strong>
+        <p>Vannaの影響が安定化か増幅かに分かれる境界。</p>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer>
-
-<hr>
-
-<p>© SUPER CURVE</p>
-
+  <hr>
+  <p>© SUPER CURVE</p>
 </footer>
-
 </body>
-
 </html>

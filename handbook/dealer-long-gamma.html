@@ -1,100 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Dealer Long Gamma</title>
-
-<link rel="stylesheet" href="../assets/css/style.css?v=homefix2">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dealer Long Gamma | Option Handbook</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=handbookfix1">
 </head>
-
 <body>
-
 <header>
-
-<h1>SUPER CURVE TERMINAL</h1>
-
-<nav>
-
-<a href="/finance-portal/">Home</a>
-
-<a href="/finance-portal/handbook/">Handbook</a>
-
-<a href="/finance-portal/dashboard/">Dashboard</a>
-
-<a href="/finance-portal/library/">Library</a>
-
-<a href="/finance-portal/search/">AI Search</a>
-
-</nav>
-
+  <h1>SUPER CURVE TERMINAL</h1>
+  <nav>
+    <a href="/finance-portal/">Home</a>
+    <a href="/finance-portal/handbook/">Handbook</a>
+    <a href="/finance-portal/dashboard/">Dashboard</a>
+    <a href="/finance-portal/library/">Library</a>
+    <a href="/finance-portal/search/">AI Search</a>
+  </nav>
 </header>
 
 <main>
+  <section class="terminal-hero">
+    <h1>Dealer Long Gamma</h1>
+    <p class="terminal-subtitle">DEALER POSITIONING / MARKET STABILITY</p>
 
-<h1>Dealer Long Gamma</h1>
+    <div class="terminal-hero-box">
+      <h2>一言でいうと</h2>
+      <p>Dealer Long Gammaは、ディーラーが正Gammaを持ち、価格変動に対して逆張りヘッジを行いやすい状態です。</p>
+    </div>
+  </section>
 
-<p><strong>Dealer Long Gamma</strong></p>
+  <section>
+    <h2>詳しい説明</h2>
+    <div class="terminal-panel">
+      <p>この環境では、相場が上がるとディーラーは売り、下がると買うヘッジを行いやすくなります。そのため価格変動は抑制され、レンジ相場やピン留めが起きやすくなります。</p>
+    </div>
+  </section>
 
-<hr>
+  <section>
+    <h2>Formula</h2>
+    <div class="terminal-panel">
+      <pre class="terminal-code">Dealer Long Gamma = Positive Net Dealer Gamma</pre>
+    </div>
+  </section>
 
-<h2>🇯🇵 一言でいうと</h2>
+  <section>
+    <h2>Market Impact</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Bull</strong>
+        <p>下落時にディーラーの買いヘッジが入りやすく、相場の下支え要因になります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Bear</strong>
+        <p>上昇時には売りヘッジが出やすく、上値を抑える要因になることがあります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Neutral</strong>
+        <p>基本的にはボラティリティを抑制し、レンジ化・ピン留めを強める構造です。</p>
+      </div>
+    </div>
+  </section>
 
-<p>相場が上がると売り、下がると買うため、値動きが落ち着きやすい状態。</p>
+  <section>
+    <h2>Dealer Action</h2>
+    <div class="terminal-panel">
+      <p>ディーラーは価格上昇時に売り、価格下落時に買うことでDeltaを中立化します。この逆張りヘッジが市場の安定化要因になります。</p>
+    </div>
+  </section>
 
-<h2>📚 詳しい説明</h2>
+  <section>
+    <h2>Trader Watch</h2>
+    <div class="terminal-grid">
+      <div class="terminal-module">
+        <strong>Gamma Wall</strong>
+        <p>大きなGammaが集中する価格帯では、価格が吸い寄せられやすくなります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>OPEX</strong>
+        <p>満期前後では建玉消滅によりLong Gamma環境が急に弱まることがあります。</p>
+      </div>
+      <div class="terminal-module">
+        <strong>Volatility</strong>
+        <p>低ボラ環境ではLong Gammaの安定化効果が強く見えやすいです。</p>
+      </div>
+    </div>
+  </section>
 
-<p>Dealer Long Gammaでは、デルタヘッジが逆張りになりやすく、価格変動を抑制します。満期付近ではPinningが起きやすくなります。</p>
-
-<h2>🧮 Formula</h2>
-
-<pre>{{formula_ascii}}</pre>
-
-<h2>📈 Market Impact</h2>
-
-<p></p>
-
-<p>
-
-Bull : 
-
-<br>
-
-Bear : 
-
-</p>
-
-<h2>💹 Dealer Action</h2>
-
-<p class="muted">-</p>
-
-<h2>🎯 Trader Watch</h2>
-
-<p class="muted">-</p>
-
-<h2>🔗 Related</h2>
-
-<div class="tag-row"><a class="tag" href="/finance-portal/handbook/gex.html">gex</a><a class="tag" href="/finance-portal/handbook/gamma-flip.html">gamma-flip</a><a class="tag" href="/finance-portal/handbook/pinning.html">pinning</a></div>
-
-<h2>📰 Report Examples</h2>
-
-<p class="muted">-</p>
-
+  <section>
+    <h2>Related</h2>
+    <div class="terminal-grid">
+      <a class="terminal-module" href="/finance-portal/handbook/gex.html">
+        <strong>Gamma Exposure</strong>
+        <p>市場全体のGamma量を確認する基本指標。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/gamma-flip.html">
+        <strong>Gamma Flip</strong>
+        <p>Long GammaとShort Gammaが切り替わる価格帯。</p>
+      </a>
+      <a class="terminal-module" href="/finance-portal/handbook/charm.html">
+        <strong>Charm</strong>
+        <p>時間経過によるDelta変化とヘッジ調整。</p>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer>
-
-<hr>
-
-<p>© SUPER CURVE</p>
-
+  <hr>
+  <p>© SUPER CURVE</p>
 </footer>
-
 </body>
-
 </html>
