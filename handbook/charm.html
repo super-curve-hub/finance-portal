@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Charm | Option Handbook</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=charmfix1">
+  <link rel="stylesheet" href="../assets/css/style.css?v=charmfix2">
 </head>
 <body>
 <header>
@@ -50,9 +50,7 @@
     <h2>Formula</h2>
     <div class="terminal-panel">
       <pre class="terminal-code">Charm = ∂Delta / ∂Time</pre>
-      <p>
-        実務的には「時間が1単位進んだとき、Deltaがどれだけ変わるか」を見る指標です。
-      </p>
+      <p>実務的には「時間が1単位進んだとき、Deltaがどれだけ変わるか」を見る指標です。</p>
     </div>
   </section>
 
@@ -61,23 +59,15 @@
     <div class="terminal-grid">
       <div class="terminal-module">
         <strong>Bull</strong>
-        <p>
-          プットのDeltaが時間経過で小さくなり、ディーラーがショートヘッジを買い戻す局面では、株価の下支え要因になります。
-        </p>
+        <p>プットのDeltaが時間経過で小さくなり、ディーラーがショートヘッジを買い戻す局面では、株価の下支え要因になります。</p>
       </div>
-
       <div class="terminal-module">
         <strong>Bear</strong>
-        <p>
-          コール側のヘッジ解消や、マイナスGamma環境と重なる場合、時間経過によるヘッジ調整が下方向のフローを強めることがあります。
-        </p>
+        <p>コール側のヘッジ解消や、マイナスGamma環境と重なる場合、時間経過によるヘッジ調整が下方向のフローを強めることがあります。</p>
       </div>
-
       <div class="terminal-module">
         <strong>Neutral</strong>
-        <p>
-          Charm単体では方向を決めません。Gamma、Vanna、建玉集中、満期、スポット位置と合わせて解釈します。
-        </p>
+        <p>Charm単体では方向を決めません。Gamma、Vanna、建玉集中、満期、スポット位置と合わせて解釈します。</p>
       </div>
     </div>
   </section>
@@ -99,12 +89,10 @@
         <strong>満期接近</strong>
         <p>0DTE、週次オプション、OPEX前後ではCharm由来のヘッジ調整が増えやすい。</p>
       </div>
-
       <div class="terminal-module">
         <strong>Gamma環境</strong>
         <p>Long Gammaでは安定化、Short Gammaでは値動き増幅と組み合わせて見る。</p>
       </div>
-
       <div class="terminal-module">
         <strong>Spot位置</strong>
         <p>Call Wall、Put Wall、Gamma Flip付近ではCharmフローの向きが変わりやすい。</p>
@@ -119,12 +107,10 @@
         <strong>Gamma Exposure</strong>
         <p>Charmと合わせてディーラーヘッジ圧力を見る。</p>
       </a>
-
       <a class="terminal-module" href="/finance-portal/handbook/gamma-flip.html">
         <strong>Gamma Flip</strong>
         <p>Charmフローの安定化・不安定化を分ける価格帯。</p>
       </a>
-
       <a class="terminal-module" href="/finance-portal/handbook/vanna.html">
         <strong>Vanna</strong>
         <p>IV変化によるDelta変化。Charmと並ぶ重要なヘッジフロー要因。</p>
