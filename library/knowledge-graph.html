@@ -4,8 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Knowledge Graph | SUPER CURVE TERMINAL</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=kgfix1">
+  <link rel="stylesheet" href="../assets/css/style.css?v=kgfix2">
   <style>
+
+    /* Knowledge Graph page layout override */
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .kg-page {
+      display: block !important;
+    }
+
+    .kg-page .terminal-subtitle {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .kg-page h1 {
+      margin: 0 0 18px;
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .kg-page > p {
+      max-width: 760px;
+      margin: 0 0 24px;
+      color: #cfe0ff;
+      line-height: 1.8;
+    }
+
     .kg-tools {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -96,7 +127,38 @@
     }
 
     @media (max-width: 640px) {
-      .kg-tools {
+  
+    /* Knowledge Graph page layout override */
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .kg-page {
+      display: block !important;
+    }
+
+    .kg-page .terminal-subtitle {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .kg-page h1 {
+      margin: 0 0 18px;
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .kg-page > p {
+      max-width: 760px;
+      margin: 0 0 24px;
+      color: #cfe0ff;
+      line-height: 1.8;
+    }
+
+    .kg-tools {
         grid-template-columns: 1fr;
       }
 
@@ -123,7 +185,7 @@
 </header>
 
 <main>
-  <section class="terminal-hero">
+  <section class="terminal-hero kg-page">
     <p class="terminal-subtitle">KNOWLEDGE GRAPH</p>
     <h1>Knowledge Graph</h1>
     <p>Relationships between concepts. JSON Knowledge Graphを読み込み、概念同士の関係をカード形式で表示します。</p>
